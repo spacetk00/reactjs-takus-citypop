@@ -10,22 +10,6 @@ const HeaderContainer = styled.header`
   background-size: cover;
 `;
 
-const HeaderCenterContainer = styled.div`
-  width: 100%;
-  height: 85%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-`;
-
-const HeaderTitle = styled.h1`
-  color: white;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 5em;
-`;
-
 const NavContainer = styled.nav`
   height: 15%;
   background-color: rgba(23, 23, 23, 0.5);
@@ -59,6 +43,26 @@ const NavContainer = styled.nav`
 
   a:hover::before {
     transform: scaleX(1);
+  }
+`;
+
+const HeaderCenterContainer = styled.div`
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const HeaderTitle = styled.h1`
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 5em;
+
+  @media(max-width: 700px) {
+    font-size: 3em;
   }
 `;
 

@@ -5,6 +5,7 @@ import {
   HeaderTitle,
   NavContainer,
 } from "./styled";
+import BigButton from "../global/button";
 
 export default function Header() {
   return (
@@ -15,9 +16,9 @@ export default function Header() {
         <a href="#">Roulette</a>
       </NavContainer>
       <HeaderCenterContainer>
-        <HeaderTitle>TAKU'S CITYPOP</HeaderTitle>
-        <hr></hr>
-        <button>Join</button>
+        <HeaderTitle>TAKU'S</HeaderTitle>
+        <HeaderTitle>CITYPOP</HeaderTitle>
+        <BigButton />
       </HeaderCenterContainer>
     </HeaderContainer>
   );

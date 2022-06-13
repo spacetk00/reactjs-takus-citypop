@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-const ButtonContainer = styled.a`
+const LinkButton = styled.a`
   text-decoration: none;
   width: 12%;
   height: 20%;
   border-radius: 30px;
+  padding: 1%;
   background-image: linear-gradient(#ee63fa, #5200ff);
   display: flex;
   justify-content: center;
@@ -29,4 +30,4 @@ const ButtonText = styled.p`
   font-size: 1.5em;
   font-weight: bold;
 `;
-export { ButtonText, ButtonContainer };
+export { ButtonText, LinkButton };

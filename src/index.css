@@ -9,6 +9,11 @@
   src: url(../src/fonts/Inter/Inter-Light.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: "Great Vibes";
+  src: url(../src/fonts/Great_Vibes/GreatVibes-Regular.ttf) format('truetype');
+}
+
 * {
   padding: 0;
   margin: 0;

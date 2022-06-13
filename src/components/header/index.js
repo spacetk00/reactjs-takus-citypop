@@ -16,8 +16,7 @@ export default function Header() {
         <a href="#">Roulette</a>
       </NavContainer>
       <HeaderCenterContainer>
-        <HeaderTitle>TAKU'S</HeaderTitle>
-        <HeaderTitle>CITYPOP</HeaderTitle>
+        <HeaderTitle>taku's citypop</HeaderTitle>
         <BigButton />
       </HeaderCenterContainer>
     </HeaderContainer>

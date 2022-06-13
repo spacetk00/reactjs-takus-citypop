@@ -58,12 +58,17 @@ const HeaderCenterContainer = styled.div`
 const HeaderTitle = styled.h1`
   color: white;
   text-align: center;
-  font-family: "Inter", sans-serif;
-  font-size: 5em;
+  font-family: "Great Vibes", sans-serif;
+  font-size: 8em;
 
-  @media(max-width: 700px) {
-    font-size: 3em;
+  @media (max-width: 700px) {
+    font-size: 4em;
   }
 `;
 
-export { HeaderContainer, HeaderCenterContainer, HeaderTitle, NavContainer };
+export {
+  HeaderContainer,
+  NavContainer,
+  HeaderCenterContainer,
+  HeaderTitle,
+};

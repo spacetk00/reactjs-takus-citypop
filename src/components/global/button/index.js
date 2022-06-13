@@ -1,10 +1,10 @@
 import React from "react";
-import { ButtonContainer, ButtonText } from "./styled";
+import { LinkButton, ButtonText } from "./styled";
 
 export default function BigButton(props) {
   return (
-    <ButtonContainer href="#" target="_blank">
+    <LinkButton href="#" target="_blank">
       <ButtonText>JOIN</ButtonText>
-    </ButtonContainer>
+    </LinkButton>
   );
 }

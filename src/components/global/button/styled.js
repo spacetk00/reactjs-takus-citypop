@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+const MoveInBottom = keyframes`
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+ `;
 
 const LinkButton = styled.a`
   text-decoration: none;
@@ -10,24 +22,29 @@ const LinkButton = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: ${MoveInBottom};
+  animation-duration: 2s;
 
-	@media (max-width: 900px) {
-    width: 20%;
-		height: 15%;
-		font-size: .8em;
+  @media (max-width: 1200px) {
+    min-width: 20%;
+    min-height: 15%;
+    font-size: 0.8em;
+    padding: .5%;
   }
 
   @media (max-width: 700px) {
-    width: 20%;
-		height: 15%;
-		font-size: .8em;
+    margin-top: 2%;
+    min-width: 30%;
+    height: 10%;
+    font-size: 0.8em;
+    padding: .5%;
   }
 `;
 
 const ButtonText = styled.p`
   color: white;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
 `;
 export { ButtonText, LinkButton };

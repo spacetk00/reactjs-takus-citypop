@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import background from "../../images/header/background.webp";
 
 const HeaderContainer = styled.header`
@@ -8,6 +8,11 @@ const HeaderContainer = styled.header`
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+
+  @media (max-width: 900px) {
+    background-position: center top;
+  }
 `;
 
 const NavContainer = styled.nav`
@@ -55,20 +60,35 @@ const HeaderCenterContainer = styled.div`
   align-items: center;
 `;
 
+const MoveInLeft = keyframes`
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+  
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+ `;
+
 const HeaderTitle = styled.h1`
   color: white;
   text-align: center;
-  font-family: "Great Vibes", sans-serif;
-  font-size: 8em;
+  font-family: "Inter", sans-serif;
+  font-variant: small-caps;
+  font-size: 6em;
+  animation-name: ${MoveInLeft};
+  animation-duration: 2s;
+
+  @media (max-width: 900px) {
+    font-size: 4em;
+  }
 
   @media (max-width: 700px) {
-    font-size: 4em;
+    font-size: 3em;
   }
 `;
 
-export {
-  HeaderContainer,
-  NavContainer,
-  HeaderCenterContainer,
-  HeaderTitle,
-};
+export { HeaderContainer, NavContainer, HeaderCenterContainer, HeaderTitle };

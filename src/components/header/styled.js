@@ -10,9 +10,6 @@ const HeaderContainer = styled.header`
   background-size: cover;
   background-attachment: fixed;
 
-  @media (max-width: 900px) {
-    background-position: center top;
-  }
 `;
 
 const NavContainer = styled.nav`

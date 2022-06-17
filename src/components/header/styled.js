@@ -1,6 +1,19 @@
 import styled, { keyframes } from "styled-components";
 import background from "../../images/header/background.webp";
 
+const MoveInLeft = keyframes`
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+  
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+ `;
+
 const HeaderContainer = styled.header`
   width: 100vw;
   height: 40vh;
@@ -9,7 +22,6 @@ const HeaderContainer = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 `;
 
 const NavContainer = styled.nav`
@@ -57,25 +69,13 @@ const HeaderCenterContainer = styled.div`
   align-items: center;
 `;
 
-const MoveInLeft = keyframes`
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
-    }
-  
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
- `;
-
 const HeaderTitle = styled.h1`
   color: white;
   text-align: center;
   font-family: "Inter", sans-serif;
   font-variant: small-caps;
   font-size: 6em;
+  transition: 2s;
   animation-name: ${MoveInLeft};
   animation-duration: 2s;
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   HeaderContainer,
   HeaderCenterContainer,
@@ -8,6 +8,7 @@ import {
 import BigButton from "../global/button";
 
 export default function Header() {
+  const [title, setTitle] = useState("taku's citypop")
   return (
     <HeaderContainer>
       <NavContainer>
@@ -16,7 +17,7 @@ export default function Header() {
         <a href="#">Roulette</a>
       </NavContainer>
       <HeaderCenterContainer>
-        <HeaderTitle>taku's citypop</HeaderTitle>
+        <HeaderTitle onClick={() => setTitle("tatsimps land")}>{title}</HeaderTitle>
         <BigButton />
       </HeaderCenterContainer>
     </HeaderContainer>

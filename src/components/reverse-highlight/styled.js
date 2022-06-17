@@ -37,15 +37,15 @@ const HighlightContainer = styled.div`
 const ImageBox = styled.div`
   width: 40%;
   height: 100%;
+  position: relative;
   background-image: url(${highlightImage});
   background-repeat: no-repeat;
   background-size: cover;
-  flex: 1;
+  flex: 2;
   animation-name: ${MoveInLeft};
   animation-duration: 2s;
 
   @media (max-width: 900px) {
-    flex-direction: column-reverse;
     background-position: center bottom;
     width: 100%;
   }
@@ -62,12 +62,24 @@ const TextBox = styled.div`
   );
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  transition: .5s;
+
+  :hover {
+    transform: scale(1.2);
+  }
 
   @media (max-width: 900px) {
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
     width: 100%;
+    flex-grow: .5;
+    padding: 1%;
+
+    :hover {
+      transform: scale(1);
+    }
   }
 `;
 

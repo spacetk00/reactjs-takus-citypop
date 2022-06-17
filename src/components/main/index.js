@@ -5,7 +5,8 @@ import PageTitle from '../global/pagetitle';
 import Toshiki from '../../images/titles/toshiki.webp'
 import HighLight from '../highlight/index'; 
 import ReverseHighlight from '../reverse-highlight';
-import MiddleBreak from '../middle-break';
+import Features from '../features';
+
 
 export default function Main() {
  return (
@@ -14,7 +15,10 @@ export default function Main() {
       <PageTitle big_title="home" title_avatar={Toshiki} title_avatar_alt="CityPop Title Image"/>
       <HighLight />
       <ReverseHighlight />
-      <MiddleBreak />
+    </SectionContainer>
+
+    <SectionContainer>
+      <Features />
     </SectionContainer>
    </MainContainer>
  );

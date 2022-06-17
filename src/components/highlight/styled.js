@@ -23,6 +23,7 @@ const HighlightContainer = styled.div`
 const ImageBox = styled.div`
   width: 40%;
   height: 100%;
+  position: relative;
   background-image: url(${highlightImage});
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,11 +49,22 @@ const TextBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: .5s;
+
+  :hover {
+    transform: scale(1.2);
+  }
 
   @media (max-width: 900px) {
     width: 100%;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
+    flex-grow: .5;
+    padding: 1%;
+
+    :hover {
+      transform: scale(1);
+    }
   }
 `;
 
@@ -69,7 +81,7 @@ const BoxText = styled.p`
   margin-top: 2%;
 
   @media (max-width: 900px) {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 `;
 

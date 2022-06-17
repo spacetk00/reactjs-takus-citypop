@@ -6,6 +6,7 @@ const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5%;
 `;
 
 export default SectionContainer;

@@ -6,7 +6,7 @@ import Toshiki from '../../images/titles/toshiki.webp'
 import HighLight from '../highlight/index'; 
 import ReverseHighlight from '../reverse-highlight';
 import Features from '../features';
-
+import UsersExperience from '../users-experience';
 
 export default function Main() {
  return (
@@ -19,6 +19,10 @@ export default function Main() {
 
     <SectionContainer>
       <Features />
+    </SectionContainer>
+    
+    <SectionContainer>
+      <UsersExperience />
     </SectionContainer>
    </MainContainer>
  );

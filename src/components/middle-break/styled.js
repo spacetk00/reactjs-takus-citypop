@@ -4,8 +4,8 @@ import background from "../../images/header/background.webp";
 const Container = styled.div`
   width: 100vw;
   height: 30vh;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   background-image: url(${background});
   background-position: center center;
   background-repeat: no-repeat;

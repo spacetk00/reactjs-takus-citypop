@@ -38,8 +38,8 @@ const FeatureBox = styled.div`
 
   @media (max-width: 700px) {
     flex-direction: column;
-    width: 90vw;
-    height: 50vh;
+    width: 70vw;
+    height: 40vh;
   }
 `;
 
@@ -48,7 +48,6 @@ const FeatureImage = styled.img`
   height: 80%;
   margin-left: 10%;
   align-self: center;
-  transition: 2s;
 
 
   @media (max-width: 1200px) {
@@ -58,9 +57,9 @@ const FeatureImage = styled.img`
   }
 
   @media (max-width: 700px) {
-    width: 80%;
-    height: 50%;
-    margin-left: 0;
+    width: 85%;
+    height: 20%;
+    margin-left: 0%;
     margin-top: 5%;
     margin-bottom: 1%;
     background-color: aliceblue;

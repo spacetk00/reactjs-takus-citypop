@@ -15,6 +15,9 @@ const COLORS = {
 
   page_title_color_1: "#6200DE",
   page_title_color_2: "#0094FF",
+
+  footer_background: "#000122",
+  footer_end: "#24008A",
 };
 
 const ANIMATIONS = {

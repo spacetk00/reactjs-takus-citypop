@@ -32,6 +32,7 @@ const FeaturesContainer = styled.div`
 `;
 
 const ContainerTitle = styled.h4`
+  margin-top: 2%;
   font-size: 3.5em;
   color: white;
   text-align: center;

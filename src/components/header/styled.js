@@ -18,7 +18,7 @@ const HeaderContainer = styled.header`
   width: 100vw;
   height: 40vh;
   background-image: url(${background});
-  background-position: center top;
+  background-position: center 90%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

@@ -8,6 +8,7 @@ const ExperiencesContainer = styled.div`
 `;
 
 const ContainerTitle = styled.h4`
+  margin-top: 2%;
   font-size: 3.5em;
   color: white;
   text-align: center;
@@ -18,7 +19,7 @@ const ContainerTitle = styled.h4`
 const UsersContainer = styled.div`
   width: 90%;
   margin-top: 5%;
-  background-color: aliceblue;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

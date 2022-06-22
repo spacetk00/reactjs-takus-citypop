@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import {COLORS} from '../../constants/index';
+import COLORS from '../../constants/colors';
+import SIZES from '../../constants/sizes';
 
 const FooterContainer = styled.div`
   width: 100vw;
@@ -24,9 +25,14 @@ const FooterInfo = styled.div`
 
 const InfoText = styled.p`
   color: white;
+  font-weight: bold;
 
-  @media (max-width: 700px) {
-    font-size: .8em;
+  @media (max-width: ${SIZES.ipad_width}) {
+    font-size: .9em;
+  }
+
+  @media (max-width: ${SIZES.iphoneX_width}) {
+    font-size: .7em;
   }
 `
 

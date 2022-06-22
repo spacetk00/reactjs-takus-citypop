@@ -5,7 +5,7 @@ const MainContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: grey;
+  background-color: #292929;
 `;
 
 export {MainContainer};

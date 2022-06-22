@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../../../constants/index";
+import COLORS from "../../../constants/colors";
 
 const FeatureBox = styled.div`
   width: 50vw;

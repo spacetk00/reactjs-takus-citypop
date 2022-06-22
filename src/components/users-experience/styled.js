@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SIZES from '../../constants/sizes';
 
 const ExperiencesContainer = styled.div`
   width: 100%;
@@ -14,6 +15,10 @@ const ContainerTitle = styled.h4`
   text-align: center;
   font-family: "Kenzo", sans-serif;
   font-variant: initial;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    font-size: 2em;
+  }
 `;
 
 const UsersContainer = styled.div`

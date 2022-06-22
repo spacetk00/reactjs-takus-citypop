@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../../../constants/index";
+import COLORS from "../../../constants/colors";
 
 const PageTitleContainer = styled.div`
   margin: 5%;

@@ -6,8 +6,7 @@ export default function UserBox(props) {
     <>
       <UB.UserBoxContainer>
         <UB.UserAvatarContainer>
-          <source media="(max-width: 1000px)" type="image/webp" srcset={props.user_avatar_medium} />
-          <source media="(max-width: 900px)" type="image/webp" srcset={props.user_avatar_small} />
+          <source media="(max-width: 768px)" type="image/webp" srcset={props.user_avatar_medium} />
           <UB.UserAvatar srcSet={props.user_avatar} alt="An avatar of the user" />
         </UB.UserAvatarContainer>
         <UB.TextBox>

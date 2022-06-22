@@ -20,8 +20,5 @@ const COLORS = {
   footer_end: "#24008A",
 };
 
-const ANIMATIONS = {
-  
-};
 
-export { COLORS, ANIMATIONS };
+export default COLORS;

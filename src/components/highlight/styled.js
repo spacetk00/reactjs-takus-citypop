@@ -1,43 +1,76 @@
 import styled from "styled-components";
-import highlightImage from "../../images/body/highlight/highlight1.webp";
-import { COLORS } from "../../constants/index";
+import COLORS from "../../constants/colors";
+import SIZES from "../../constants/sizes";
 
 const HighlightContainer = styled.div`
+  width: 80%;
   height: 600px;
-  width: 70%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 900px) {
-    flex-direction: column-reverse;
+  @media (max-width: ${SIZES.monitor_1366_width}) {
     width: 100%;
     margin-bottom: 10%;
   }
 
-  @media (max-width: 1366px) {
+  @media (max-width: ${SIZES.generic_laptop_width}) {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+`;
+
+const ImageBox = styled.picture`
+  width: 35%;
+  height: 100%;
+  background-color: aqua;
+
+  @media (max-width: ${SIZES.ipad_width}) {
     width: 100%;
   }
 `;
 
-const ImageBox = styled.div`
-  width: 40%;
+const Image = styled.img`
+  width: 100%;
   height: 100%;
-  position: relative;
-  background-image: url(${highlightImage});
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex: 1;
 
-  @media (max-width: 900px) {
+  @media (max-width: ${SIZES.generic_laptop_width}) {
     width: 100%;
-    background-position: center bottom;
+  }
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    width: 100%;
+  }
+`;
+
+const MiddleBlock = styled.div`
+  position: relative;
+  width: 30%;
+  height: 100%;
+
+  @media (max-width: ${SIZES.generic_laptop_width}) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 `;
 
 const TextBox = styled.div`
-  width: 60%;
-  min-height: 30%;
+  position: absolute;
+  top: 25%;
+  left: -35%;
+  transform: skew(-20deg);
+  width: 600px;
+  height: 250px;
   padding: 3%;
   background-image: linear-gradient(
     to bottom right,
@@ -49,40 +82,60 @@ const TextBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: .5s;
+  transition: 0.5s;
 
   :hover {
     transform: scale(1.2);
   }
 
-  @media (max-width: 900px) {
-    width: 100%;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-    flex-grow: .5;
-    padding: 1%;
-
+  @media (max-width: ${SIZES.generic_laptop_width}) {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    
     :hover {
-      transform: scale(1);
+      transform: scale(1.1);
     }
+  }
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    width: 100%;
+    height: 100%;
+    transform: skew(0deg);
   }
 `;
 
 const BoxTitle = styled.h4`
+  transform: skew(20deg);
   color: white;
   font-size: 1.5em;
   text-align: center;
   margin: 2%;
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    transform: skew(0deg);
+  }
 `;
 
 const BoxText = styled.p`
+  transform: skew(20deg);
   color: white;
   text-align: justify;
   margin-top: 2%;
 
-  @media (max-width: 900px) {
-    font-size: 0.9em;
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    transform: skew(0deg);
   }
 `;
 
-export { HighlightContainer, ImageBox, TextBox, BoxTitle, BoxText };
+export {
+  HighlightContainer,
+  ImageBox,
+  Image,
+  MiddleBlock,
+  TextBox,
+  BoxTitle,
+  BoxText,
+};

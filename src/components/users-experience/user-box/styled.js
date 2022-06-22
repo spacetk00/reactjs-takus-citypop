@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import {COLORS} from '../../../constants/index';
+import COLORS from '../../../constants/colors';
+import SIZES from '../../../constants/sizes';
 
 const UserBoxContainer = styled.div`
   width: 600px;
   height: 200px;
   border-radius: 15px;
-  margin: 1%;
+  margin: 2%;
   display: flex;
   align-items: center;
   background-image: linear-gradient(
@@ -15,16 +16,12 @@ const UserBoxContainer = styled.div`
     ${COLORS.highlight_color_3}
   );
 
-  @media (max-width: 1500px) {
+  @media (max-width: ${SIZES.monitor_1366_width}) {
     width: 400px;
     height: 150px;
   }
 
-  @media (max-width: 900px) {
-    margin: 1%;
-  }
-
-  @media (max-width: 600px) {
+  @media (max-width: ${SIZES.iphoneX_width}) {
     margin: 3%;
   }
 `;
@@ -36,56 +33,32 @@ const UserAvatarContainer = styled.picture`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 1100px) {
+  @media (max-width:  ${SIZES.iphoneX_width}) {
     width: 40%;
-  }
-
-  @media (max-width: 900px) {
-    width: 50%;
   }
 `
 
 const UserAvatar = styled.img`
-  width: 80%;
-  height: 80%;
+  width: 75%;
   border-radius: 50%;
-  margin-left: 5%;
 
-  @media (max-width: 1300px) {
-    width: 70%;
-    height: 70%;
-  }
-
-  @media (max-width: 900px) {
-    width: 60%;
-    height: 60%;
+  @media (max-width: ${SIZES.ipad_width}) {
+    width: 80%;
   }
 `;
 
 const TextBox = styled.div`
   width: 65%;
-  margin: 2%;
+  height: 100%;
   padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
-  @media (max-width: 1500px) {
-    height: 90%;
-  }
-
-  @media (max-width: 1100px) {
-    margin-left: 5%;
-    width: 60%;
-  }
-
-  @media (max-width: 900px) {
-    align-self: flex-end;
-    padding: 1%;
-    width: 50%;
+  @media (max-width: ${SIZES.ipad_width}) {
+    padding: 2%;
     height: 100%;
-    justify-content: center;
-
   }
 `;
 
@@ -98,11 +71,11 @@ const UserName = styled.h4`
 const UserText = styled.p`
   color: white;
 
-  @media (max-width: 1500px) {
+  @media (max-width: ${SIZES.monitor_1366_width}) {
     font-size: .9em;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${SIZES.iphoneX_width}) {
     font-size: .8em;
     text-align: center;
   }

@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import highlightImage from "../../images/body/highlight/highlight2.webp";
-import { COLORS } from "../../constants/index";
+import COLORS from "../../constants/colors";
 
 const MoveInLeft = keyframes`
     0% {
@@ -64,7 +64,7 @@ const TextBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: .5s;
+  transition: 0.5s;
 
   :hover {
     transform: scale(1.2);
@@ -74,7 +74,7 @@ const TextBox = styled.div`
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
     width: 100%;
-    flex-grow: .5;
+    flex-grow: 0.5;
     padding: 1%;
 
     :hover {

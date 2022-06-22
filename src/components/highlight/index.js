@@ -10,26 +10,23 @@ export default function Highlight() {
     <H.HighlightContainer>
       <H.ImageBox>
         <source
-          media="(max-width: 1024px)"
+          media="(max-width: 1280px)"
           type="image/webp"
           srcset={city1_md}
         />
         <H.Image src={city1} alt="An image of a japanese city" />
       </H.ImageBox>
-      <H.MiddleBlock>
-        <H.TextBox>
-          <H.BoxTitle>What the Pop!</H.BoxTitle>
-          <H.BoxText>
-            City Pop is an innovative and future-proof living concept where you
-            can create your own pop-up city. An online platform where you can
-            turn your bedroom into an urban paradise. Your very own paradise on
-            earth.
-          </H.BoxText>
-        </H.TextBox>
-      </H.MiddleBlock>
+      <H.TextBox>
+        <H.BoxTitle>What the Pop!</H.BoxTitle>
+        <H.BoxText>
+          City Pop is an innovative and future-proof living concept where you
+          can create your own pop-up city. An online platform where you can turn
+          your bedroom into an urban paradise. Your very own paradise on earth.
+        </H.BoxText>
+      </H.TextBox>
       <H.ImageBox>
         <source
-          media="(max-width: 1024px)"
+          media="(max-width: 1280px)"
           type="image/webp"
           srcset={city2_md}
         />

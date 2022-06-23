@@ -7,11 +7,11 @@ const FeaturesContainer = styled.div`
   align-items: center;
 
   & > div:nth-child(even) {
-    align-self: flex-start;
+    align-self: flex-end;
   }
 
   & > div:nth-child(odd) {
-    align-self: flex-end;
+    align-self: flex-start;
   }
 
   & > div:last-child {

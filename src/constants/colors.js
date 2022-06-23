@@ -1,14 +1,14 @@
-import { keyframes } from "styled-components";
-
 const COLORS = {
   highlight_color_1: "#592671",
   highlight_color_2: "#002ccda6",
-  highlight_color_3: "#0000008c",
+  highlight_color_3: "#00D4F2DB",
 
-  border_color_1: "#00FFFF",
-  border_color_2: "#FF00A8",
-  border_color_3: "#3c00ff",
-  border_color_4: "#9000ff",
+  features_color_1: "#2A006B",
+  features_color_2: "#9054eacc",
+  features_color_3: "#b493e6b3",
+
+  border_color_1: "#F300FF",
+  border_color_2: "#2BFFE6",
 
   button1_color_1: "#EE63FA",
   button1_color_2: "#5200FF",

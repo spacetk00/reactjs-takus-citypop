@@ -19,11 +19,13 @@ export default function FeatureBox(props) {
   return (
     <>
       <FB.FeatureBox>
-        <FB.FeatureImage
-          src={image}
-          alt={props.box_img_alt}
-          onClick={() => changeImage(image)}
-        />
+        <FB.FeatureImageBox>
+          <FB.Image
+            src={image}
+            alt={props.box_img_alt}
+            onClick={() => changeImage(image)}
+          />
+        </FB.FeatureImageBox>
         <FB.TextBox>
           <FB.BoxTitle>{props.box_title}</FB.BoxTitle>
           <FB.BoxText>{props.box_text}</FB.BoxText>

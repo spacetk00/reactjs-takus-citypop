@@ -21,7 +21,6 @@ const HighlightContainer = styled.div`
 const ImageBox = styled.picture`
   width: 30%;
   height: 100%;
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -3,8 +3,32 @@ import COLORS from "../../../constants/colors";
 import SIZES from "../../../constants/sizes";
 
 const RelatedServerContainer = styled.div`
-  width: 80%;
-  height: 60%;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    width: 100%;
+    height: 50%;
+  }
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    height: 55%;
+  }
+`;
+
+const ContainerTitle = styled.h4`
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  margin-top: 5%;
+`;
+
+const ServerInfo = styled.div`
+  width: 70%;
+  height: 50%;
   border-radius: 20px;
   background-image: linear-gradient(
     to bottom right,
@@ -29,6 +53,11 @@ const ServerImgBox = styled.picture`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
+
+  :hover {
+    transform: rotate(180deg) scale(.7)
+  }
 `;
 
 const ServerImg = styled.img`
@@ -39,10 +68,25 @@ const ServerImg = styled.img`
 const TextBox = styled.div`
   width: 55%;
   height: 80%;
-  background-color: blueviolet;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom right,
+    ${COLORS.server_textbox_color_1},
+    ${COLORS.server_textbox_color_2}
+  );
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 2%;
+  transition: 1s;
 
-  @media (max-width: ${SIZES.monitor_1366_width}) {
+  :hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    justify-content: center;
   }
 `;
 
@@ -50,7 +94,6 @@ const BoxTitle = styled.h4`
   text-align: center;
   color: white;
   font-size: 1em;
-  margin-top: 2%;
   margin-bottom: 5%;
 `;
 
@@ -60,16 +103,18 @@ const BoxText = styled.p`
   text-align: center;
 
   @media (max-width: ${SIZES.monitor_1366_width}) {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   @media (max-width: ${SIZES.iphoneX_width}) {
-    font-size: .5em;
+    font-size: 0.5em;
   }
 `;
 
 export {
   RelatedServerContainer,
+  ContainerTitle,
+  ServerInfo,
   ServerImgBox,
   ServerImg,
   TextBox,

@@ -75,7 +75,7 @@ const TextBox = styled.div`
   height: 70%;
   border-left: 10px solid #00000080;
   border-right: 10px solid #00000080;
-  background-color: #00000080;
+  background-color: ${COLORS.features_textbox_color};
   display: flex;
   flex-direction: column;
   justify-content: center;

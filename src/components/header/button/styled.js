@@ -1,4 +1,5 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
+import COLORS from "../../../constants/colors";
 
 const MoveInBottom = keyframes`
     0% {
@@ -18,7 +19,10 @@ const LinkButton = styled.a`
   height: 20%;
   border-radius: 30px;
   padding: 1%;
-  background-image: linear-gradient(#ee63fa, #5200ff);
+  background-image: linear-gradient(
+    ${COLORS.button_header_color_1},
+    ${COLORS.button_header_color_2}
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +33,7 @@ const LinkButton = styled.a`
     min-width: 20%;
     min-height: 15%;
     font-size: 0.8em;
-    padding: .5%;
+    padding: 0.5%;
   }
 
   @media (max-width: 700px) {
@@ -37,7 +41,7 @@ const LinkButton = styled.a`
     min-width: 30%;
     height: 10%;
     font-size: 0.8em;
-    padding: .5%;
+    padding: 0.5%;
   }
 `;
 

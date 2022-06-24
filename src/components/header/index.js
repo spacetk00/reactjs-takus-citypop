@@ -5,7 +5,7 @@ import {
   HeaderTitle,
   NavContainer,
 } from "./styled";
-import BigButton from "../global/button";
+import BigButton from "./button/index";;
 
 export default function Header() {
   const [title, setTitle] = useState("taku's citypop")

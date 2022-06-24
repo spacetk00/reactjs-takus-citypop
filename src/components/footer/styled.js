@@ -1,39 +1,160 @@
 import styled from "styled-components";
-import COLORS from '../../constants/colors';
-import SIZES from '../../constants/sizes';
+import COLORS from "../../constants/colors";
+import SIZES from "../../constants/sizes";
 
 const FooterContainer = styled.div`
   width: 100vw;
-  height: 40vh;
+  height: 60vh;
   background-color: ${COLORS.footer_background};
-`
+
+  @media (max-width: ${SIZES.generic_laptop_width}) {
+    height: 40vh;
+  }
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    height: 80vh;
+  }
+`;
 
 const FooterContent = styled.div`
   width: 100%;
   height: 90%;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    flex-direction: column;
+  }
+`;
+
+const ExtraBox = styled.div`
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    width: 100%;
+    height: 50%;
+  }
+`;
+
+const ExtraTitle = styled.h4`
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  margin-top: 5%;
+`;
+
+
+const TakuBox = styled.div`
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    width: 100%;
+    height: 50%;
+  }
+`;
+
+const LogoBox = styled.picture`
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    height: 80%;
+  }
+
+`;
+
+const Logo = styled.img`
+  width: 35%;
+
+  @media (max-width: ${SIZES.generic_laptop_width}) {
+    width: 40%;
+  }
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    width: 35%;
+  }
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    width: 55%;
+  }
+`;
+
+const SocialBox = styled.div`
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+  }
+`;
+
+const SocialLinkContainer = styled.a`
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+
+  :hover {
+    transform: scale(1.2);
+    filter: brightness(150%);
+  }
+`;
+
+const SocialLogo = styled.img`
+  height: 60%;
+`;
 
 const FooterInfo = styled.div`
   width: 100%;
   height: 10%;
-  padding: .5%;
+  padding: 0.5%;
   background-color: ${COLORS.footer_end};
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const InfoText = styled.p`
   color: white;
   font-weight: bold;
 
   @media (max-width: ${SIZES.ipad_width}) {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
-  @media (max-width: ${SIZES.iphoneX_width}) {
-    font-size: .7em;
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    font-size: 0.7em;
   }
-`
+`;
 
-export {FooterContainer, FooterContent, FooterInfo, InfoText}
+export {
+  FooterContainer,
+  FooterContent,
+  ExtraBox,
+  ExtraTitle,
+  TakuBox,
+  LogoBox,
+  Logo,
+  SocialBox,
+  SocialLinkContainer,
+  SocialLogo,
+  FooterInfo,
+  InfoText,
+};

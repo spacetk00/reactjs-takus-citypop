@@ -11,9 +11,9 @@ const UserBoxContainer = styled.div`
   align-items: center;
   background-image: linear-gradient(
     to bottom right,
-    ${COLORS.highlight_color_1},
-    ${COLORS.highlight_color_2},
-    ${COLORS.highlight_color_3}
+    ${COLORS.users_color_1},
+    ${COLORS.users_color_2},
+    ${COLORS.users_color_3}
   );
 
   @media (max-width: ${SIZES.monitor_1366_width}) {
@@ -34,7 +34,7 @@ const UserAvatarContainer = styled.picture`
   align-items: center;
 
   @media (max-width:  ${SIZES.iphoneX_width}) {
-    width: 40%;
+    width: 35%;
   }
 `
 
@@ -48,8 +48,10 @@ const UserAvatar = styled.img`
 `;
 
 const TextBox = styled.div`
-  width: 65%;
-  height: 100%;
+  background-image: linear-gradient(to right, ${COLORS.user_tbox_color_1}, ${COLORS.user_tbox_color_2});
+  border-radius: 20px;
+  width: 60%;
+  height: 70%;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -57,8 +59,13 @@ const TextBox = styled.div`
   justify-content: center;
 
   @media (max-width: ${SIZES.ipad_width}) {
+    height: 80%;
     padding: 2%;
-    height: 100%;
+  }
+
+  @media (max-width: ${SIZES.iphoneX_width}) {
+    width: 60%;
+    padding: 2%;
   }
 `;
 
@@ -75,8 +82,8 @@ const UserText = styled.p`
     font-size: .9em;
   }
 
-  @media (max-width: ${SIZES.iphoneX_width}) {
-    font-size: .8em;
+  @media (max-width: ${SIZES.ipad_width}) {
+    font-size: .7em;
     text-align: center;
   }
 `;

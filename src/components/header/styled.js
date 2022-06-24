@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
 import background from "../../images/header/background.webp";
 
+import TYPOS from "../../constants/typos";
+
 const MoveInLeft = keyframes`
     0% {
       opacity: 0;
@@ -36,6 +38,7 @@ const NavContainer = styled.nav`
     color: white;
     text-decoration: none;
     margin: 0 5%;
+    font-size: ${TYPOS.nav_link_size};
   }
 
   a:hover {
@@ -72,9 +75,9 @@ const HeaderCenterContainer = styled.div`
 const HeaderTitle = styled.h1`
   color: white;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: ${TYPOS.header_title_font}, sans-serif;
   font-variant: small-caps;
-  font-size: 6em;
+  font-size: ${TYPOS.header_title_size};
   transition: 2s;
   animation-name: ${MoveInLeft};
   animation-duration: 2s;

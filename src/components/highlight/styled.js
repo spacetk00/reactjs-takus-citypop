@@ -63,11 +63,14 @@ const TextBox = styled.div`
 
   @media (max-width: ${SIZES.generic_laptop_width}) {
     width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     transform: skew(0deg);
     :hover {
-      transform: scale(1.1);
+      transform: scaleY(1.2);
     }
   }
+
 `;
 
 const BoxTitle = styled.h4`

@@ -18,7 +18,8 @@ const FeatureBox = styled.div`
   margin-left: 12%;
   margin-right: 12%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     transition: 1s;
@@ -54,13 +55,13 @@ const FeatureImageBox = styled.picture`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .2%;
+  padding: 0.2%;
 
   @media (max-width: ${SIZES.ipad_width}) {
     width: 100%;
     height: 60%;
   }
-`
+`;
 const Image = styled.img`
   width: 80%;
 
@@ -70,16 +71,28 @@ const Image = styled.img`
 `;
 
 const TextBox = styled.div`
-  width: 60%;
+  width: 50%;
+  height: 70%;
+  border-left: 10px solid #00000080;
+  border-right: 10px solid #00000080;
+  background-color: #00000080;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2%;
 
+  :hover {
+    transform: translate(0deg);
+  }
+
   @media (max-width: ${SIZES.ipad_width}) {
     width: 100%;
     height: 40%;
+    border-top: 10px solid #00000080;
+    border-bottom: 10px solid #00000080;
+    border-left: 0px;
+    border-right: 0px;
   }
 `;
 
@@ -99,17 +112,15 @@ const BoxTitle = styled.h4`
     font-size: 1.2em;
     align-self: center;
   }
-
 `;
 
 const BoxText = styled.p`
-  text-align: left;
   font-size: 1em;
+  text-align: center;
   color: white;
 
   @media (max-width: 700px) {
     font-size: 1em;
-    text-align: center;
   }
 `;
 

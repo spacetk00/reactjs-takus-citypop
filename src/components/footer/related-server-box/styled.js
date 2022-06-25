@@ -7,6 +7,7 @@ const RelatedServerContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   @media (max-width: ${SIZES.ipad_width}) {
@@ -15,7 +16,7 @@ const RelatedServerContainer = styled.div`
   }
 
   @media (max-width: ${SIZES.iphone_proMax_width}) {
-    height: 55%;
+    height: 50%;
   }
 `;
 
@@ -24,6 +25,11 @@ const ContainerTitle = styled.h4`
   color: white;
   font-size: 1.2em;
   margin-top: 5%;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    margin-top: 2%;
+    font-size: 1em;
+  }
 `;
 
 const ServerInfo = styled.div`
@@ -45,6 +51,14 @@ const ServerInfo = styled.div`
     width: 90%;
     height: 60%;
   }
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    height: 40%;
+  }
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    height: 50%;
+  }
 `;
 
 const ServerImgBox = styled.picture`
@@ -63,6 +77,14 @@ const ServerImgBox = styled.picture`
 const ServerImg = styled.img`
   width: 80%;
   border-radius: 50%;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    width: 60%;
+  }
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    width: 80%;
+  }
 `;
 
 const TextBox = styled.div`
@@ -88,6 +110,9 @@ const TextBox = styled.div`
   @media (max-width: ${SIZES.ipad_width}) {
     justify-content: center;
   }
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    height: 90%;
+  }
 `;
 
 const BoxTitle = styled.h4`
@@ -95,6 +120,7 @@ const BoxTitle = styled.h4`
   color: white;
   font-size: 1em;
   margin-bottom: 5%;
+
 `;
 
 const BoxText = styled.p`

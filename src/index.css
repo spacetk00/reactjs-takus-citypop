@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: "Moonrising";
+  src: url(../src/fonts/moonrising/Moonrising.otf) format('opentype');
+}
+
+@font-face {
   font-family: "Kenzo";
   src: url(../src/fonts/Kenzo/Kenzo_Regular.otf) format('opentype');
 }

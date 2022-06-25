@@ -1,5 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import COLORS from "../../../constants/colors";
+import SIZES from "../../../constants/sizes";
+import TYPOS from "../../../constants/typos";
 
 const MoveInBottom = keyframes`
     0% {
@@ -15,9 +17,9 @@ const MoveInBottom = keyframes`
 
 const LinkButton = styled.a`
   text-decoration: none;
-  width: 12%;
-  height: 20%;
-  border-radius: 30px;
+  width: 220px;
+  height: 70px;
+  border-radius: 50px;
   padding: 1%;
   background-image: linear-gradient(
     ${COLORS.button_header_color_1},
@@ -29,26 +31,21 @@ const LinkButton = styled.a`
   animation-name: ${MoveInBottom};
   animation-duration: 2s;
 
-  @media (max-width: 1200px) {
-    min-width: 20%;
-    min-height: 15%;
-    font-size: 0.8em;
-    padding: 0.5%;
-  }
-
-  @media (max-width: 700px) {
-    margin-top: 2%;
-    min-width: 30%;
-    height: 10%;
-    font-size: 0.8em;
-    padding: 0.5%;
+  @media (max-width: ${SIZES.monitor_1366_width}) {
+    margin-top: 1%;
+    width: 150px;
+    height: 50px;
   }
 `;
 
 const ButtonText = styled.p`
   color: white;
   text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: ${TYPOS.button_text_size};
+  font-family: ${TYPOS.button_font}, sans-serif;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    font-size: ${TYPOS.button_text_md_size};
+  }
 `;
 export { ButtonText, LinkButton };

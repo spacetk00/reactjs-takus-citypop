@@ -16,7 +16,7 @@ const TakuBox = styled.div`
   }
 
   @media (max-width: ${SIZES.iphone_proMax_width}) {
-    height: 45%;
+    height: 50%;
   }
 `;
 
@@ -28,9 +28,8 @@ const LogoBox = styled.picture`
   align-items: center;
 
   @media (max-width: ${SIZES.ipad_width}) {
-    height: 80%;
+    height: 90%;
   }
-
 `;
 
 const Logo = styled.img`
@@ -41,11 +40,11 @@ const Logo = styled.img`
   }
 
   @media (max-width: ${SIZES.ipad_width}) {
-    width: 30%;
+    width: 40%;
   }
 
   @media (max-width: ${SIZES.iphone_proMax_width}) {
-    width: 40%;
+    width: 50%;
   }
 `;
 
@@ -57,6 +56,7 @@ const SocialBox = styled.div`
   align-items: center;
 
   @media (max-width: ${SIZES.ipad_width}) {
+    height: 20%;
   }
 `;
 
@@ -66,7 +66,7 @@ const SocialLinkContainer = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .7s;
+  transition: 0.7s;
 
   :hover {
     transform: scale(1.5);

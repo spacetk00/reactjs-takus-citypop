@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components";
 import background from "../../images/header/background.webp";
 
 import TYPOS from "../../constants/typos";
+import SIZES from '../../constants/sizes';
 
 const MoveInLeft = keyframes`
     0% {
@@ -82,12 +83,12 @@ const HeaderTitle = styled.h1`
   animation-name: ${MoveInLeft};
   animation-duration: 2s;
 
-  @media (max-width: 900px) {
-    font-size: 4em;
+  @media (max-width: ${SIZES.ipad_width}) {
+    font-size: ${TYPOS.header_title_md_size};
   }
 
-  @media (max-width: 700px) {
-    font-size: 3em;
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    font-size: ${TYPOS.header_title_sm_size};
   }
 `;
 

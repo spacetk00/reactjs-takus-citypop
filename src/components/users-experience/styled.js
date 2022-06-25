@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import SIZES from '../../constants/sizes';
+import TYPOS from "../../constants/typos";
 
 const ExperiencesContainer = styled.div`
   width: 100%;
@@ -10,14 +11,14 @@ const ExperiencesContainer = styled.div`
 
 const ContainerTitle = styled.h4`
   margin-top: 2%;
-  font-size: 3.5em;
   color: white;
   text-align: center;
-  font-family: "Kenzo", sans-serif;
+  font-family: ${TYPOS.section_title_font}, sans-serif;
+  font-size: ${TYPOS.section_title_size};
   font-variant: initial;
 
   @media (max-width: ${SIZES.ipad_width}) {
-    font-size: 2em;
+    font-size: ${TYPOS.section_title_md_size};
   }
 `;
 

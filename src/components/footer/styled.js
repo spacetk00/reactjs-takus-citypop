@@ -4,15 +4,19 @@ import SIZES from "../../constants/sizes";
 
 const FooterContainer = styled.div`
   width: 100vw;
-  height: 60vh;
+  height: 500px;
   background-color: ${COLORS.footer_background};
 
   @media (max-width: ${SIZES.generic_laptop_width}) {
-    height: 40vh;
+    height: 400px;
   }
 
   @media (max-width: ${SIZES.ipad_width}) {
-    height: 80vh;
+    height: 900px;
+  }
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    height: 700px;
   }
 `;
 

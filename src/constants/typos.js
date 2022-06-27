@@ -1,9 +1,10 @@
 const TYPOS = {
-  header_title_font: "Inter",
+  header_title_font: "Inter Thin",
   header_title_size: "6em",
   header_title_md_size: "4em",
   header_title_sm_size: "3em",
 
+  nav_link_font: "Inter",
   nav_link_size: "1.2em",
 
   button_font: "Moonrising",
@@ -20,7 +21,18 @@ const TYPOS = {
   section_title_size: "3.5em",
   section_title_md_size: "2em",
 
-  box_title_font: "",
+  box_title_font: "Ampero",
+  box_title_size: "1.4em",
+  box_title_md_size: "1em",
+
+  box_text_size: "1em",
+  box_text_md_size: ".9em",
+  box_text_sm_size: ".7em",
+
+  related_title_font: "Kenzo",
+  related_title_size: "1.5em",
+  related_title_md_size: "1.2em",
+  related_title_sm_size: "1em",
 
 }
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import COLORS from "../../../constants/colors";
 import SIZES from "../../../constants/sizes";
+import TYPOS from "../../../constants/typos";
 
 const FeatureBox = styled.div`
   width: 900px;
@@ -56,6 +57,7 @@ const FeatureImageBox = styled.picture`
   justify-content: center;
   align-items: center;
   padding: 0.2%;
+  transition: .3s;
 
   @media (max-width: ${SIZES.ipad_width}) {
     width: 100%;
@@ -96,32 +98,27 @@ const TextBox = styled.div`
   }
 `;
 
-const BoxTitle = styled.h4`
-  font-weight: bold;
+const BoxTitle = styled.h5`
   margin-bottom: 7%;
-  font-size: 1.5em;
+  font-family: ${TYPOS.box_title_font}, sans-serif;
+  font-size: ${TYPOS.box_title_size};
   color: white;
 
-  @media (max-width: 1200px) {
-    font-size: 1.2em;
+  @media (max-width: ${SIZES.generic_laptop_width}) {
     align-self: center;
     margin-bottom: 3%;
   }
 
   @media (max-width: ${SIZES.ipad_width}) {
-    font-size: 1.2em;
+    font-size: ${TYPOS.box_title_md_size};
     align-self: center;
   }
 `;
 
 const BoxText = styled.p`
-  font-size: 1em;
+  font-size: ${TYPOS.box_text_size};
   text-align: center;
   color: white;
-
-  @media (max-width: 700px) {
-    font-size: 1em;
-  }
 `;
 
 export { FeatureBox, FeatureImageBox, Image, TextBox, BoxTitle, BoxText };

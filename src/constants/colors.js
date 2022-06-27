@@ -8,6 +8,7 @@ const COLORS = {
   features_color_3: "#7694ff99",
 
   features_textbox_color: "#00000080",
+  textbox_shadow_color: "#17171766",
 
   border_color_1: "#00FFFF",
   border_color_2: "#2400FF",

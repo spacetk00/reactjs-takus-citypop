@@ -39,6 +39,8 @@ const NavContainer = styled.nav`
     color: white;
     text-decoration: none;
     margin: 0 5%;
+    font-weight: bold;
+    font-family: ${TYPOS.nav_link_font};
     font-size: ${TYPOS.nav_link_size};
   }
 
@@ -82,6 +84,10 @@ const HeaderTitle = styled.h1`
   transition: 2s;
   animation-name: ${MoveInLeft};
   animation-duration: 2s;
+
+  :hover {
+    cursor: pointer;
+  }
 
   @media (max-width: ${SIZES.ipad_width}) {
     font-size: ${TYPOS.header_title_md_size};

@@ -1,16 +1,31 @@
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter Thin";
   src: url(../src/fonts/Inter/Inter-Thin.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Inter Light";
-  src: url(../src/fonts/Inter/Inter-Light.ttf) format('truetype');
+  font-family: "Inter";
+  src: url(../src/fonts/Inter/Inter-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: "Moonrising";
   src: url(../src/fonts/moonrising/Moonrising.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../src/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(../src/fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Ampero";
+  src: url(../src/fonts/ampero/Ampero-SemiBold.otf) format('opentype');
 }
 
 @font-face {
@@ -22,7 +37,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter Light", sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

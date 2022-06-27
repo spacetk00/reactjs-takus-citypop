@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import COLORS from '../../../constants/colors';
 import SIZES from '../../../constants/sizes';
+import TYPOS from "../../../constants/typos";
 
 const UserBoxContainer = styled.div`
   width: 600px;
@@ -49,6 +50,7 @@ const UserAvatar = styled.img`
 
 const TextBox = styled.div`
   background-image: linear-gradient(to right, ${COLORS.user_tbox_color_1}, ${COLORS.user_tbox_color_2});
+  box-shadow: 5px 3px 4px ${COLORS.textbox_shadow_color};
   border-radius: 20px;
   width: 60%;
   height: 70%;
@@ -69,21 +71,26 @@ const TextBox = styled.div`
   }
 `;
 
-const UserName = styled.h4`
+const UserName = styled.h5`
   color: white;
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+  font-size: ${TYPOS.box_title_size};
+  font-family: ${TYPOS.box_title_font}, sans-serif;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    font-size: ${TYPOS.box_title_md_size};
+  }
 `;
 
 const UserText = styled.p`
   color: white;
 
   @media (max-width: ${SIZES.monitor_1366_width}) {
-    font-size: .9em;
+    font-size: ${TYPOS.box_text_md_size};
   }
 
   @media (max-width: ${SIZES.ipad_width}) {
-    font-size: .7em;
     text-align: center;
   }
 `;

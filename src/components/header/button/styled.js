@@ -25,11 +25,23 @@ const LinkButton = styled.a`
     ${COLORS.button_header_color_1},
     ${COLORS.button_header_color_2}
   );
+  box-shadow: 3px 5px 10px black;
   display: flex;
   justify-content: center;
   align-items: center;
   animation-name: ${MoveInBottom};
   animation-duration: 2s;
+  transition: .5s;
+
+  :hover {
+    transform: translateY(-10%);
+    filter: contrast(150%);
+  }
+
+  :active {
+   transform: translateY(10%);
+   filter: blur(5px);
+  }
 
   @media (max-width: ${SIZES.monitor_1366_width}) {
     margin-top: 1%;

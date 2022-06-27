@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import COLORS from "../../constants/colors";
 import SIZES from "../../constants/sizes";
+import TYPOS from "../../constants/typos";
 
 const HighlightContainer = styled.div`
   width: 90%;
@@ -76,7 +77,8 @@ const TextBox = styled.div`
 const BoxTitle = styled.h4`
   transform: skew(20deg);
   color: white;
-  font-size: 1.5em;
+  font-family: ${TYPOS.box_title_font};
+  font-size: ${TYPOS.box_title_size};
   text-align: center;
   margin: 2%;
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import COLORS from "../../../constants/colors";
 import SIZES from "../../../constants/sizes";
+import TYPOS from "../../../constants/typos";
 
 const RelatedServerContainer = styled.div`
   width: 55%;
@@ -20,15 +21,19 @@ const RelatedServerContainer = styled.div`
   }
 `;
 
-const ContainerTitle = styled.h4`
+const ContainerTitle = styled.h5`
   text-align: center;
   color: white;
-  font-size: 1.2em;
-  margin-top: 5%;
+  font-family: ${TYPOS.related_title_font};
+  font-size: ${TYPOS.related_title_size};
 
   @media (max-width: ${SIZES.ipad_width}) {
     margin-top: 2%;
-    font-size: 1em;
+    font-size: ${TYPOS.related_title_md_size};
+  }
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    font-size: ${TYPOS.related_title_sm_size};
   }
 `;
 
@@ -95,8 +100,7 @@ const TextBox = styled.div`
     ${COLORS.server_textbox_color_1},
     ${COLORS.server_textbox_color_2}
   );
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+  box-shadow: 5px 3px 4px ${COLORS.textbox_shadow_color};
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -115,25 +119,30 @@ const TextBox = styled.div`
   }
 `;
 
-const BoxTitle = styled.h4`
+const BoxTitle = styled.h5`
   text-align: center;
   color: white;
-  font-size: 1em;
+  font-family: ${TYPOS.box_title_font};
+  font-size: ${TYPOS.box_title_size};
   margin-bottom: 5%;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    margin-bottom: 2%;
+  }
 
 `;
 
 const BoxText = styled.p`
-  font-size: 1.1em;
+  font-size: ${TYPOS.box_text_size};
   color: white;
   text-align: center;
 
   @media (max-width: ${SIZES.monitor_1366_width}) {
-    font-size: 0.8em;
+    font-size: ${TYPOS.box_text_md_size}
   }
 
-  @media (max-width: ${SIZES.iphoneX_width}) {
-    font-size: 0.5em;
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    font-size: ${TYPOS.box_text_sm_size};
   }
 `;
 

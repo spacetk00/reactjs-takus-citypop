@@ -16,6 +16,17 @@ const LinkButton = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .5s;
+
+  :hover {
+    transform: translateY(-10%);
+    filter: contrast(150%);
+  }
+
+  :active {
+    transform: translateY(10%);
+    filter: blur(5px);
+  }
 
   @media (max-width: ${SIZES.monitor_1366_width}) {
     margin-bottom: 2%;

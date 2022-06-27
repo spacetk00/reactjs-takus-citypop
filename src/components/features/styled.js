@@ -13,6 +13,13 @@ const FeaturesContainer = styled.div`
     align-self: flex-end;
   }
 
+  & > div:nth-child(2) > picture {
+    :hover {
+      cursor: pointer;
+      transform: scale(1.1) rotate(10deg);
+    }
+  }
+
   & > div:nth-child(odd) {
     align-self: flex-start;
     flex-direction: row-reverse;
@@ -44,4 +51,30 @@ const ContainerTitle = styled.h4`
   }
 `;
 
-export { FeaturesContainer, ContainerTitle };
+const StrongWord = styled.strong`
+  font-family: "Roboto Bold", sans-serif;
+  transition: .5s;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  :hover {
+    background-color: orangered;
+    border-radius: 2px;
+  }
+`
+
+const MeaningWord = styled.abbr`
+  font-family: "Roboto Bold", sans-serif;
+  transition: .5s;
+  cursor: pointer;
+  padding-left: 1px;
+  padding-right: 1px;
+
+  :hover {
+    background-color: orangered;
+    border-radius: 2px;
+  }
+`
+
+export { FeaturesContainer, ContainerTitle, StrongWord, MeaningWord };

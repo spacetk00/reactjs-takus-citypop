@@ -1,21 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import background from "../../images/header/background.webp";
 
 import TYPOS from "../../constants/typos";
 import SIZES from '../../constants/sizes';
-
-const MoveInLeft = keyframes`
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
-    }
-  
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
- `;
 
 const HeaderContainer = styled.header`
   width: 100vw;
@@ -82,8 +69,6 @@ const HeaderTitle = styled.h1`
   font-variant: small-caps;
   font-size: ${TYPOS.header_title_size};
   transition: 2s;
-  animation-name: ${MoveInLeft};
-  animation-duration: 2s;
 
   :hover {
     cursor: pointer;

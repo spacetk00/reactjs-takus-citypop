@@ -8,7 +8,7 @@ import city2_md from "../../images/highlight/city-2_cut.webp";
 export default function Highlight() {
   return (
     <H.HighlightContainer>
-      <H.ImageBox>
+      <H.ImageBox data-aos="fade-right">
         <source
           media="(max-width: 1280px)"
           type="image/webp"
@@ -16,6 +16,7 @@ export default function Highlight() {
         />
         <H.Image src={city1} alt="An image of a japanese city" />
       </H.ImageBox>
+
       <H.TextBox>
         <H.BoxTitle>What the Pop!</H.BoxTitle>
         <H.BoxText>
@@ -24,7 +25,8 @@ export default function Highlight() {
           your bedroom into an urban paradise. Your very own paradise on earth.
         </H.BoxText>
       </H.TextBox>
-      <H.ImageBox>
+
+      <H.ImageBox data-aos="fade-left">
         <source
           media="(max-width: 1280px)"
           type="image/webp"

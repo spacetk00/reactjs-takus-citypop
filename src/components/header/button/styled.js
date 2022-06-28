@@ -1,19 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import COLORS from "../../../constants/colors";
 import SIZES from "../../../constants/sizes";
 import TYPOS from "../../../constants/typos";
 
-const MoveInBottom = keyframes`
-    0% {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
- `;
 
 const LinkButton = styled.a`
   text-decoration: none;
@@ -29,8 +18,6 @@ const LinkButton = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-name: ${MoveInBottom};
-  animation-duration: 2s;
   transition: .5s;
 
   :hover {

@@ -18,7 +18,7 @@ export default function FeatureBox(props) {
   };
   return (
     <>
-      <FB.FeatureBox>
+      <FB.FeatureBox data-aos={props.animation}>
         <FB.FeatureImageBox>
           <FB.Image
             src={image}

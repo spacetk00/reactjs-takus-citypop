@@ -6,7 +6,7 @@ import BigButtonFooter from '../big-button/index';
 
 export default function RelatedServerBox() {
   return (
-    <RB.RelatedServerContainer>
+    <RB.RelatedServerContainer data-aos="fade-right">
       <RB.ContainerTitle>
         If you're a gamer who doesn't like games, take a look into this server
       </RB.ContainerTitle>

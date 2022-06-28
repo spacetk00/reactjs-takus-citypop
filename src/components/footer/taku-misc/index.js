@@ -12,7 +12,7 @@ export default function TakuMisc() {
     <>
       <T.TakuBox>
         <T.LogoBox>
-          <T.Logo src={takulogo} alt="Takuromi Logo" />
+          <T.Logo src={takulogo} alt="Takuromi Logo" data-aos="zoom-in" />
         </T.LogoBox>
         <T.SocialBox>
           <T.SocialLinkContainer
@@ -35,7 +35,7 @@ export default function TakuMisc() {
             rel="noreferrer"
           >
             <T.SocialLogo src={tktwitter} alt="Taku's Twitter" />
-          </T.SocialLinkContainer>
+          </T.SocialLinkContainer> 
           <T.SocialLinkContainer
             href="https://www.youtube.com/channel/UCdNx7RSpJQcqfwnWBy7dFeQ"
             target="_blank"

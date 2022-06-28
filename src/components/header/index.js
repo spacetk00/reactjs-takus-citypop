@@ -17,8 +17,8 @@ export default function Header() {
         <a href="#">Roulette</a>
       </NavContainer>
       <HeaderCenterContainer>
-        <HeaderTitle onClick={() => setTitle("tatsimps land")}>{title}</HeaderTitle>
-        <BigButton />
+        <HeaderTitle onClick={() => setTitle("tatsimps land")} data-aos="fade-right">{title}</HeaderTitle>
+        <BigButton/>
       </HeaderCenterContainer>
     </HeaderContainer>
   );

@@ -3,7 +3,7 @@ import * as T from './styled'
 
 export default function PageTitle(props) {
  return ( 
-  <T.PageTitleContainer>
+  <T.PageTitleContainer data-aos="zoom-in">
     <T.TitleAvatar src={props.title_avatar} alt={props.title_avatar_alt}/>
     <T.TitleContainer>
       <T.SmallTitle>Taku's Citypop</T.SmallTitle>

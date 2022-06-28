@@ -27,7 +27,7 @@ const ContainerTitle = styled.h5`
   font-family: ${TYPOS.related_title_font};
   font-size: ${TYPOS.related_title_size};
 
-  @media (max-width: ${SIZES.ipad_width}) {
+  @media (max-width: ${SIZES.generic_laptop_width}) {
     margin-top: 2%;
     font-size: ${TYPOS.related_title_md_size};
   }
@@ -106,10 +106,6 @@ const TextBox = styled.div`
   justify-content: space-evenly;
   padding: 2%;
   transition: 1s;
-
-  :hover {
-    transform: scale(1.1);
-  }
 
   @media (max-width: ${SIZES.ipad_width}) {
     justify-content: center;

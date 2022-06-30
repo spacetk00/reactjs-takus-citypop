@@ -1,9 +1,15 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Header from "./components/header";
-import Main from "./components/main";
 import Footer from "./components/footer";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 AOS.init({
   duration: 1200,
   once: true,
@@ -12,10 +18,13 @@ AOS.init({
 
 export default function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }

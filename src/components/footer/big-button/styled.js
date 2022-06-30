@@ -13,6 +13,7 @@ const LinkButton = styled.a`
     ${COLORS.button_footer_color_1},
     ${COLORS.button_footer_color_2}
   );
+  box-shadow: 3px 5px 10px ${COLORS.textbox_shadow_color};
   display: flex;
   justify-content: center;
   align-items: center;

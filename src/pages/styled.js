@@ -7,7 +7,6 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgrey;
   background-image: url(${wall});
   background-repeat: no-repeat;
   background-attachment: fixed;

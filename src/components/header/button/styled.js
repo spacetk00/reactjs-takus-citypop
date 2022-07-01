@@ -38,7 +38,7 @@ const LinkButton = styled.a`
 `;
 
 const ButtonText = styled.p`
-  color: white;
+  color: ${COLORS.text_default_color};
   text-align: center;
   font-size: ${TYPOS.button_text_size};
   font-family: ${TYPOS.button_font}, sans-serif;

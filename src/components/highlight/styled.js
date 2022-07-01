@@ -76,7 +76,7 @@ const TextBox = styled.div`
 
 const BoxTitle = styled.h4`
   transform: skew(20deg);
-  color: white;
+  color: ${COLORS.text_default_color};
   font-family: ${TYPOS.box_title_font};
   font-size: ${TYPOS.box_title_size};
   text-align: center;
@@ -89,7 +89,7 @@ const BoxTitle = styled.h4`
 
 const BoxText = styled.p`
   transform: skew(20deg);
-  color: white;
+  color: ${COLORS.text_default_color};
   text-align: justify;
   margin-top: 2%;
 

@@ -23,7 +23,7 @@ const RelatedServerContainer = styled.div`
 
 const ContainerTitle = styled.h5`
   text-align: center;
-  color: white;
+  color: ${COLORS.text_default_color};
   font-family: ${TYPOS.related_title_font};
   font-size: ${TYPOS.related_title_size};
 
@@ -117,7 +117,7 @@ const TextBox = styled.div`
 
 const BoxTitle = styled.h5`
   text-align: center;
-  color: white;
+  color: ${COLORS.text_default_color};
   font-family: ${TYPOS.box_title_font};
   font-size: ${TYPOS.box_title_size};
   margin-bottom: 5%;
@@ -130,7 +130,7 @@ const BoxTitle = styled.h5`
 
 const BoxText = styled.p`
   font-size: ${TYPOS.box_text_size};
-  color: white;
+  color: ${COLORS.text_default_color};
   text-align: center;
 
   @media (max-width: ${SIZES.monitor_1366_width}) {

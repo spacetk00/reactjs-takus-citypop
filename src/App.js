@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Home from "./pages/home";
+import About from "./pages/about";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -1,4 +1,6 @@
 const COLORS = {
+  text_default_color: "white",
+
   highlight_color_1: "#592671",
   highlight_color_2: "#002ccda6",
   highlight_color_3: "#00D4F2DB",

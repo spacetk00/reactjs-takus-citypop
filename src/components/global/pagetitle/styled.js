@@ -5,29 +5,41 @@ import TYPOS from "../../../constants/typos";
 
 const PageTitleContainer = styled.div`
   margin: 5%;
-  padding: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   //background-color: aliceblue;
 `;
 
-const TitleAvatar = styled.img`
-  align-self: center;
-  width: 15%;
-  border-radius: 50%;
-  margin-bottom: 2%;
+const AvatarBox = styled.picture`
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`
 
-  @media (max-width: 700px) {
-    width: 30%;
+const TitleAvatar = styled.img`
+  width: 55%;
+  border-radius: 50%;
+
+  @media (max-width: ${SIZES.generic_laptop_width}) {
+    width: 40%;
+  }
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    width: 70%;
   }
 `;
 
 const TitleContainer = styled.div`
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  //background-color: orange;
   margin-left: 2%;
 `;
 
@@ -46,6 +58,7 @@ const BigTitle = styled.h2`
   font-family: ${TYPOS.page_title_font}, sans-serif;
   font-size:  ${TYPOS.page_title_bg_size};
   font-variant: small-caps;
+  background-color: cadetblue;
   background-image: linear-gradient(
     to right,
     ${COLORS.page_title_color_1},
@@ -61,6 +74,7 @@ const BigTitle = styled.h2`
 
 export {
   PageTitleContainer,
+  AvatarBox,
   TitleAvatar,
   TitleContainer,
   SmallTitle,

@@ -102,7 +102,7 @@ const BoxTitle = styled.h5`
   margin-bottom: 7%;
   font-family: ${TYPOS.box_title_font}, sans-serif;
   font-size: ${TYPOS.box_title_size};
-  color: white;
+  color: ${COLORS.text_default_color};
 
   @media (max-width: ${SIZES.generic_laptop_width}) {
     align-self: center;
@@ -118,7 +118,7 @@ const BoxTitle = styled.h5`
 const BoxText = styled.p`
   font-size: ${TYPOS.box_text_size};
   text-align: center;
-  color: white;
+  color: ${COLORS.text_default_color};
 `;
 
 export { FeatureBox, FeatureImageBox, Image, TextBox, BoxTitle, BoxText };

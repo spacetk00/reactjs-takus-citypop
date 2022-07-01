@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import SIZES from '../../constants/sizes';
 import TYPOS from "../../constants/typos";
+import COLORS from "../../constants/colors"
 
 const ExperiencesContainer = styled.div`
   width: 100%;
@@ -11,7 +12,7 @@ const ExperiencesContainer = styled.div`
 
 const ContainerTitle = styled.h4`
   margin-top: 2%;
-  color: white;
+  color: ${COLORS.text_default_color};
   text-align: center;
   font-family: ${TYPOS.section_title_font}, sans-serif;
   font-size: ${TYPOS.section_title_size};

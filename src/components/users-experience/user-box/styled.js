@@ -72,7 +72,7 @@ const TextBox = styled.div`
 `;
 
 const UserName = styled.h5`
-  color: white;
+  color: ${COLORS.text_default_color};
   text-align: center;
   margin-bottom: 2%;
   font-size: ${TYPOS.box_title_size};
@@ -84,7 +84,7 @@ const UserName = styled.h5`
 `;
 
 const UserText = styled.p`
-  color: white;
+  color: ${COLORS.text_default_color};
 
   @media (max-width: ${SIZES.monitor_1366_width}) {
     font-size: ${TYPOS.box_text_md_size};

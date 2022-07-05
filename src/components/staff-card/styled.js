@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import COLORS from "../../constants/colors";
 import TYPOS from "../../constants/typos";
+import SIZES from "../../constants/sizes";
 
 const CardContainer = styled.div`
   background-image: linear-gradient(to right bottom, ${(props) => props.color});
@@ -10,6 +11,10 @@ const CardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 2%;
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    height: 350px;
+  }
 `;
 
 const AvatarBox = styled.picture`
@@ -44,6 +49,7 @@ const StaffName = styled.h4`
 
 const AboutText = styled.p`
   color: ${COLORS.text_default_color};
+  font-family: "Roboto Bold", sans-serif;
   text-align: center;
 `;
 

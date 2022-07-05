@@ -1,5 +1,6 @@
 import React from "react";
 import * as U from "./styled";
+import SectionTitle from "../global/section-title";
 import UserBox from "./user-box/index";
 
 import emposto from "../../images/users/emposto.webp";
@@ -15,7 +16,7 @@ import spaceMedium from "../../images/users/space.webp";
 export default function UsersExperience() {
   return (
     <U.ExperiencesContainer>
-      <U.ContainerTitle data-aos="zoom-in-up">Our members's experiences</U.ContainerTitle>
+      <SectionTitle text="Our members's experiences"/>
       <U.UsersContainer>
         <UserBox
           animation="fade-right"

@@ -39,6 +39,13 @@ const COLORS = {
 
   button_footer_color_1: "#FE813B",
   button_footer_color_2: "#fbef80b3",
+
+  staff_1_colors: "#4B0357, #FC65FF",
+  staff_2_colors: "#0EAF00, #E9ED10",
+  staff_3_colors: "#FF3D83, #D90000",
+  staff_4_colors: "#000000, #FB2D77",
+  staff_5_colors: "#FF00E5, #FFD600",
+  staff_6_colors: "#2400FF, #00FFFF",
 };
 
 

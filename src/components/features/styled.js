@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import SIZES from "../../constants/sizes";
-import TYPOS from '../../constants/typos';
-import COLORS from "../../constants/colors";
 
 const FeaturesContainer = styled.div`
   width: 100%;
@@ -39,19 +37,6 @@ const FeaturesContainer = styled.div`
   }
 `;
 
-const ContainerTitle = styled.h4`
-  margin-top: 2%;
-  font-size: ${TYPOS.section_title_size};
-  color: ${COLORS.text_default_color};
-  text-align: center;
-  font-family: ${TYPOS.section_title_font}, sans-serif;
-  font-variant: initial;
-
-  @media (max-width: ${SIZES.ipad_width}) {
-    font-size: ${TYPOS.section_title_md_size};
-  }
-`;
-
 const StrongWord = styled.strong`
   font-family: "Roboto Bold", sans-serif;
   transition: .5s;
@@ -78,4 +63,4 @@ const MeaningWord = styled.abbr`
   }
 `
 
-export { FeaturesContainer, ContainerTitle, StrongWord, MeaningWord };
+export { FeaturesContainer, StrongWord, MeaningWord };

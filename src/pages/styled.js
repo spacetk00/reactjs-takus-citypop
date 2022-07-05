@@ -26,4 +26,13 @@ const SectionContainer = styled.section`
   }
 `;
 
-export {Container, SectionContainer};
+const Box = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+`
+
+export {Container, SectionContainer, Box};

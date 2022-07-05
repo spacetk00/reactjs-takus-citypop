@@ -1,6 +1,9 @@
 import React from "react";
 import * as F from "./styled";
+
+import SectionTitle from "../global/section-title";
 import FeatureBox from "./feature-box";
+
 import djOcy from "../../images/features/dj_ocy.webp";
 import gang from "../../images/features/gang_fight.webp";
 import albuns from "../../images/features/albuns.webp";
@@ -8,8 +11,7 @@ import albuns from "../../images/features/albuns.webp";
 export default function Features() {
   return (
     <F.FeaturesContainer>
-      <F.ContainerTitle data-aos="zoom-in-up">We Have</F.ContainerTitle>
-
+      <SectionTitle text="We Have"/>
       <FeatureBox
         animation="fade-right"
         box_title="Music Events"

@@ -29,10 +29,12 @@ const TYPOS = {
   box_text_md_size: ".9em",
   box_text_sm_size: ".7em",
 
-  related_title_font: "Kenzo",
-  related_title_size: "1.5em",
-  related_title_md_size: "1.2em",
-  related_title_sm_size: "1em",
+  staff_name_size: "1.7em",
+
+  related_title_font: "League Spartan",
+  related_title_size: "1em",
+  related_title_md_size: ".9em",
+  related_title_sm_size: ".7em",
 
 }
 

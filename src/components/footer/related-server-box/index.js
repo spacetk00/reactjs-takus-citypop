@@ -2,11 +2,12 @@ import React from "react";
 import vrchat from "../../../images/footer/vrchat.webp";
 import * as RB from "./styled";
 
-import BigButtonFooter from '../big-button/index';
+import BigButton from "../../global/big-button";
+import COLORS from "../../../constants/colors";
 
 export default function RelatedServerBox() {
   return (
-    <RB.RelatedServerContainer data-aos="fade-right">
+    <RB.RelatedServerContainer data-aos="" background={vrchat}>
       <RB.ContainerTitle>
         If you're a gamer who doesn't like games, take a look into this server
       </RB.ContainerTitle>
@@ -24,7 +25,11 @@ export default function RelatedServerBox() {
           </RB.BoxText>
         </RB.TextBox>
       </RB.ServerInfo>
-      <BigButtonFooter />
+      <BigButton
+        link="https://discord.com/invite/yY9FBYGXXw"
+        color={COLORS.button_footer_colors}
+        text="join"
+      />
     </RB.RelatedServerContainer>
   );
 }

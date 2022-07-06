@@ -3,7 +3,7 @@ import COLORS from "../../../constants/colors";
 import SIZES from "../../../constants/sizes";
 
 const TakuBox = styled.div`
-  width: 45%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,11 +12,11 @@ const TakuBox = styled.div`
 
   @media (max-width: ${SIZES.ipad_width}) {
     width: 100%;
-    height: 50%;
+    height: 40%;
   }
 
   @media (max-width: ${SIZES.iphone_proMax_width}) {
-    height: 50%;
+    height: 40%;
   }
 `;
 
@@ -40,7 +40,7 @@ const Logo = styled.img`
   }
 
   @media (max-width: ${SIZES.ipad_width}) {
-    width: 40%;
+    width: 30%;
   }
 
   @media (max-width: ${SIZES.iphone_proMax_width}) {

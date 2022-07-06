@@ -16,7 +16,7 @@ const FooterContainer = styled.div`
   }
 
   @media (max-width: ${SIZES.iphone_proMax_width}) {
-    height: 700px;
+    //height: 700px;
   }
 `;
 

@@ -10,10 +10,7 @@ const LinkButton = styled.a`
   height: 70px;
   border-radius: 50px;
   padding: 1%;
-  background-image: linear-gradient(
-    ${COLORS.button_header_color_1},
-    ${COLORS.button_header_color_2}
-  );
+  background-image: linear-gradient(${(props) => props.color});
   box-shadow: 3px 5px 10px ${COLORS.textbox_shadow_color};
   display: flex;
   justify-content: center;

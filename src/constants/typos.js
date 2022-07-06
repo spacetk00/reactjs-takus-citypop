@@ -34,7 +34,6 @@ const TYPOS = {
   related_title_font: "League Spartan",
   related_title_size: "1em",
   related_title_md_size: ".9em",
-  related_title_sm_size: ".7em",
 
 }
 

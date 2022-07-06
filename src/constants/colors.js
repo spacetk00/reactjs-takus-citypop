@@ -30,12 +30,18 @@ const COLORS = {
 
   server_textbox_color_1: "#00000080",
   server_textbox_color_2: "#5f9dfb66",
+  server_textbox_color_phone_1: "#000000cc",
+  server_textbox_color_phone_2: "#2b006366",
 
   footer_background: "#000122",
   footer_end: "#24008A",
 
   button_header_color_1: "#EE63FA",
   button_header_color_2: "#5200FF",
+
+  button_header_colors: "#EE63FA, #5200FF",
+  button_footer_colors: "#FE813B, #fbef80b3",
+
 
   button_footer_color_1: "#FE813B",
   button_footer_color_2: "#fbef80b3",

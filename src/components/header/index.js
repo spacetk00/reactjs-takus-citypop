@@ -1,16 +1,17 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   HeaderContainer,
   HeaderCenterContainer,
   HeaderTitle,
   NavContainer,
 } from "./styled";
-import BigButton from "./button/index";;
+import BigButton from "../global/big-button";
+import COLORS from "../../constants/colors";
 
-console.log(<HeaderContainer/>)
+console.log(<HeaderContainer />);
 export default function Header() {
-  const [title, setTitle] = useState("taku's citypop")
+  const [title, setTitle] = useState("taku's citypop");
   return (
     <HeaderContainer>
       <NavContainer>
@@ -18,8 +19,17 @@ export default function Header() {
         <Link to="/about">About</Link>
       </NavContainer>
       <HeaderCenterContainer>
-        <HeaderTitle onClick={() => setTitle("tatsimps land")} data-aos="fade-right">{title}</HeaderTitle>
-        <BigButton/>
+        <HeaderTitle
+          onClick={() => setTitle("tatsimps land")}
+          data-aos="fade-right"
+        >
+          {title}
+        </HeaderTitle>
+        <BigButton
+          link="https://discord.com/invite/RHvyaAh"
+          color={COLORS.button_header_colors}
+          text="join"
+        />
       </HeaderCenterContainer>
     </HeaderContainer>
   );

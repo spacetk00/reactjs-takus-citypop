@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 
 import Home from "./pages/home";
 import About from "./pages/about";
+import Roulette from "./pages/roulette";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,6 +24,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/roulette" element={<Roulette />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -17,6 +17,7 @@ export default function Header() {
       <NavContainer>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
+        <Link to="/roulette">Roulette</Link>
       </NavContainer>
       <HeaderCenterContainer>
         <HeaderTitle

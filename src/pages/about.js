@@ -1,9 +1,10 @@
 import React from "react";
-import { Container, SectionContainer, Box } from "./styled";
+import { Container, SectionContainer, Box, StrongWord } from "./styled";
 import COLORS from "../constants/colors";
 
 import PageTitle from "../components/global/pagetitle";
 import SingleTextBox from "../components/global/single-text-box";
+import Figure from "../components/global/figure";
 import SectionTitle from "../components/global/section-title";
 import StaffCard from "../components/staff-card";
 import Break from "../components/break";
@@ -15,6 +16,7 @@ import SirDoge from "../images/staff/doge.webp";
 import Riri from "../images/staff/riri.webp";
 import Gatito from "../images/staff/gatito.webp";
 import Meenik from "../images/staff/meenik.webp";
+import AkinaChan from "../images/body/akinachan.webp";
 
 export default function About() {
   return (
@@ -26,8 +28,16 @@ export default function About() {
           title_avatar_alt="CityPop Title Image"
         />
 
-        <SingleTextBox />
-        <SectionTitle text="Our Staff"/>
+        <SingleTextBox
+          text={["The story of this server begins just before 2020, when a british guy named ", <StrongWord>Taku</StrongWord>, " started listening to the albums of a japanese singer know as ", <StrongWord>Akina Nakamori</StrongWord>, " and immediately became an obsessed fan. After days of worshipping his new deity he wondered if there were people who love Akina like he does. After searching on the web he found another Akina fans, he also found some japanese music fan communities and discovers more music of the same style. At a certain moment he had the idea to create his own community for fans addicted to Plastic Love, and thus ", <StrongWord>Taku's City-Pop</StrongWord>, " was born. However, due to the popularity of ", <StrongWord>Tatsuro Yamashita</StrongWord>,", the server has become a place for his fans and today this place is called", <StrongWord>Tatsu Fans Island</StrongWord>, "."]}
+        />
+
+        <Figure
+          image={AkinaChan}
+          caption="A picture of Takumori by Rayi Sakamoto"
+        />
+
+        <SectionTitle text="Our Staff" />
         <Box>
           <StaffCard
             image={Taku}

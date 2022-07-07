@@ -35,4 +35,13 @@ const Box = styled.div`
   margin-bottom: 2%;
 `
 
-export {Container, SectionContainer, Box};
+const StrongWord = styled.strong`
+  font-family: "Roboto Bold", sans-serif;
+  color: #bb87ff;
+  transition: .5s;
+  padding-left: 3px;
+  padding-right: 3px;
+`
+
+
+export {Container, SectionContainer, Box, StrongWord};

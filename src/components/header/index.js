@@ -9,7 +9,6 @@ import {
 import BigButton from "../global/big-button";
 import COLORS from "../../constants/colors";
 
-console.log(<HeaderContainer />);
 export default function Header() {
   const [title, setTitle] = useState("taku's citypop");
   return (

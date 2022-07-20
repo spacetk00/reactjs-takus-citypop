@@ -12,7 +12,7 @@ export default function Highlight() {
         <source
           media="(max-width: 1280px)"
           type="image/webp"
-          srcset={city1_md}
+          srcSet={city1_md}
         />
         <H.Image src={city1} alt="An image of a japanese city" />
       </H.ImageBox>
@@ -30,7 +30,7 @@ export default function Highlight() {
         <source
           media="(max-width: 1280px)"
           type="image/webp"
-          srcset={city2_md}
+          srcSet={city2_md}
         />
         <H.Image src={city2} alt="An image of a japanese city" />
       </H.ImageBox>

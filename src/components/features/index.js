@@ -11,7 +11,7 @@ import albuns from "../../images/features/albuns.webp";
 export default function Features() {
   return (
     <F.FeaturesContainer>
-      <SectionTitle text="We Have"/>
+      <SectionTitle text="We Have" />
       <FeatureBox
         animation="fade-right"
         box_title="Music Events"

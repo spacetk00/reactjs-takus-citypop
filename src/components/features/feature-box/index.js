@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import * as FB from "./styled";
 import djDogue from "../../../images/features/dj_dogue.webp";
 import djOcy from "../../../images/features/dj_ocy.webp";
+
 export default function FeatureBox(props) {
   const [image, setImage] = useState(props.box_img);
-  console.log(typeof image);
 
   let changeImage = (image) => {
-    let imgIsDogue = image.includes("dj_dogue")
-    let imgIsOcy = image.includes("dj_ocy")
+    let imgIsDogue = image.includes("dj_dogue");
+    let imgIsOcy = image.includes("dj_ocy");
 
     if (imgIsOcy) {
       setImage(djDogue);
@@ -21,7 +21,7 @@ export default function FeatureBox(props) {
       <FB.FeatureBox data-aos={props.animation}>
         <FB.FeatureImageBox>
           <FB.Image
-            src={image}
+            srcSet={image}
             alt={props.box_img_alt}
             onClick={() => changeImage(image)}
           />

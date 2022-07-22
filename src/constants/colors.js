@@ -36,15 +36,10 @@ const COLORS = {
   footer_background: "#000122",
   footer_end: "#24008A",
 
-  button_header_color_1: "#EE63FA",
-  button_header_color_2: "#5200FF",
-
   button_header_colors: "#EE63FA, #5200FF",
   button_footer_colors: "#FE813B, #fbef80b3",
-
-
-  button_footer_color_1: "#FE813B",
-  button_footer_color_2: "#fbef80b3",
+  button_roulette_colors: "#00FF66, #8F00FF",
+  button_roulette_off_colors: "#454545, #000000",
 
   staff_1_colors: "#4B0357, #FC65FF",
   staff_2_colors: "#0EAF00, #E9ED10",
@@ -52,6 +47,8 @@ const COLORS = {
   staff_4_colors: "#000000, #FB2D77",
   staff_5_colors: "#FF00E5, #FFD600",
   staff_6_colors: "#2400FF, #00FFFF",
+
+  roulette_box_colors: "#C216A3, #C60000",
 };
 
 

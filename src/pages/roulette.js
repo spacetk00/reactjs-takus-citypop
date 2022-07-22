@@ -2,10 +2,9 @@ import React from "react";
 import { Container, SectionContainer } from "./styled";
 import PageTitle from "../components/global/pagetitle";
 import SingleTextBox from "../components/global/single-text-box";
+import RouletteBox from "../components/roulette-box";
 
-import Roulett from "../images/titles/roulette.webp"
-//import SINGERS from '../db/singers';
-//console.log(SINGERS.akina.image);
+import Roulett from "../images/titles/roulette.webp";
 
 export default function Roulette() {
   return (
@@ -17,9 +16,9 @@ export default function Roulette() {
           title_avatar_alt="CityPop Title Image"
         />
         <SingleTextBox
-          text="okookiojiojiojojiojoijiojiojiojoijoiojjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+          text="Test your luck and find a jpop singer to listen to today, maybe you can find your new favorite singer."
         />
+        <RouletteBox/>
       </SectionContainer>
     </Container>
   );

@@ -6,6 +6,9 @@ import TYPOS from "../../../constants/typos";
 const Container = styled.div`
   width: 70%;
   margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: ${SIZES.generic_laptop_width}) {
     width: 92%;

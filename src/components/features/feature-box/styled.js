@@ -100,7 +100,7 @@ const TextBox = styled.div`
 
 const BoxTitle = styled.h5`
   margin-bottom: 7%;
-  font-family: ${TYPOS.box_title_font}, sans-serif;
+  font-family: ${TYPOS.box_title_font}, Arial, sans-serif;
   font-size: ${TYPOS.box_title_size};
   color: ${COLORS.text_default_color};
 

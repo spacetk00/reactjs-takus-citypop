@@ -76,7 +76,7 @@ const UserName = styled.h5`
   text-align: center;
   margin-bottom: 2%;
   font-size: ${TYPOS.box_title_size};
-  font-family: ${TYPOS.box_title_font}, sans-serif;
+  font-family: ${TYPOS.box_title_font}, Arial, sans-serif;
 
   @media (max-width: ${SIZES.ipad_width}) {
     font-size: ${TYPOS.box_title_md_size};

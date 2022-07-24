@@ -73,7 +73,7 @@ const HeaderCenterContainer = styled.div`
 const HeaderTitle = styled.h1`
   color: white;
   text-align: center;
-  font-family: ${TYPOS.header_title_font}, sans-serif;
+  font-family: ${TYPOS.header_title_font}, Arial, sans-serif;
   font-variant: small-caps;
   font-size: ${TYPOS.header_title_size};
   transition: 2s;

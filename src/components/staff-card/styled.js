@@ -44,12 +44,12 @@ const StaffName = styled.h4`
   margin-top: 2%;
   margin-bottom: 5%;
   font-size: ${TYPOS.staff_name_size};
-  font-family: ${TYPOS.box_title_font}, sans-serif;
+  font-family: ${TYPOS.box_title_font}, Arial, sans-serif;
 `;
 
 const AboutText = styled.p`
   color: ${COLORS.text_default_color};
-  font-family: "Roboto Bold", sans-serif;
+  font-family: "Roboto Bold", Arial, sans-serif;
   text-align: center;
 `;
 

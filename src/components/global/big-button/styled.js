@@ -38,7 +38,7 @@ const ButtonText = styled.p`
   color: ${COLORS.text_default_color};
   text-align: center;
   font-size: ${TYPOS.button_text_size};
-  font-family: ${TYPOS.button_font}, sans-serif;
+  font-family: ${TYPOS.button_font}, Arial, sans-serif;
 
   @media (max-width: ${SIZES.ipad_width}) {
     font-size: ${TYPOS.button_text_md_size};

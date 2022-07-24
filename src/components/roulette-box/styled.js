@@ -48,6 +48,7 @@ const Box = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 5%;
 `;
 
 const Name = styled.h4`

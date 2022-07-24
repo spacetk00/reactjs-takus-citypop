@@ -34,7 +34,7 @@ const TitleContainer = styled.div`
 `;
 
 const SmallTitle = styled.h3`
-  font-family: "Kenzo", sans-serif;
+  font-family: "Kenzo", Arial, sans-serif;
   font-size: ${TYPOS.page_title_sm_size};
   color: white;
   box-sizing: content-box;
@@ -46,7 +46,7 @@ const SmallTitle = styled.h3`
 `;
 
 const BigTitle = styled.h2`
-  font-family: ${TYPOS.page_title_font}, sans-serif;
+  font-family: ${TYPOS.page_title_font}, Arial, sans-serif;
   font-size: ${TYPOS.page_title_bg_size};
   font-variant: small-caps;
   background-image: linear-gradient(

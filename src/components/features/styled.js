@@ -38,7 +38,7 @@ const FeaturesContainer = styled.div`
 `;
 
 const StrongWord = styled.strong`
-  font-family: "Roboto Bold", sans-serif;
+  font-family: "Roboto Bold", Arial, sans-serif;
   transition: .5s;
   cursor: pointer;
   padding-left: 5px;
@@ -51,7 +51,7 @@ const StrongWord = styled.strong`
 `
 
 const MeaningWord = styled.abbr`
-  font-family: "Roboto Bold", sans-serif;
+  font-family: "Roboto Bold", Arial, sans-serif;
   transition: .5s;
   cursor: pointer;
   padding-left: 1px;

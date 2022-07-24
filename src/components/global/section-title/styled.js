@@ -7,7 +7,7 @@ const Title = styled.h4`
   margin-top: 2%;
   color: ${COLORS.text_default_color};
   text-align: center;
-  font-family: ${TYPOS.section_title_font}, sans-serif;
+  font-family: ${TYPOS.section_title_font}, Arial, sans-serif;
   font-size: ${TYPOS.section_title_size};
   font-variant: initial;
 

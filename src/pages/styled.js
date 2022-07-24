@@ -43,7 +43,7 @@ const Box = styled.div`
 `
 
 const StrongWord = styled.strong`
-  font-family: "Roboto Bold", sans-serif;
+  font-family: "Roboto Bold", Arial, sans-serif;
   color: #bb87ff;
   transition: .5s;
   padding-left: 3px;

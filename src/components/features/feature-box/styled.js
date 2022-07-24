@@ -46,8 +46,8 @@ const FeatureBox = styled.div`
 
   @media (max-width: ${SIZES.iphone_proMax_width}) {
     flex-direction: column;
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 450px;
   }
 `;
 

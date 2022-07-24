@@ -49,7 +49,7 @@ const BigTitle = styled.h2`
   font-family: ${TYPOS.page_title_font}, sans-serif;
   font-size: ${TYPOS.page_title_bg_size};
   font-variant: small-caps;
-  background-color: cadetblue;
+  background-color: #3b29ff;
   background-image: linear-gradient(
     to right,
     ${COLORS.page_title_color_1},
@@ -60,6 +60,10 @@ const BigTitle = styled.h2`
 
   @media (max-width: ${SIZES.generic_laptop_width}) {
     font-size: ${TYPOS.page_title_bg_size_res};
+  }
+
+  @media (max-width: ${SIZES.ipad_width}) {
+    background-image: none;
   }
 `;
 

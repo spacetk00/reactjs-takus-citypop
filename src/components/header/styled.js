@@ -12,6 +12,10 @@ const HeaderContainer = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    background-attachment: scroll;
+  }
 `;
 
 const NavContainer = styled.nav`

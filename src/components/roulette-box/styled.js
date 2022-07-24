@@ -35,6 +35,10 @@ const ImgSection = styled.picture`
 const Img = styled.img`
   height: 90%;
   border-radius: 50%;
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    height: 70%;
+  }
 `;
 
 const Box = styled.div`

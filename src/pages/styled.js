@@ -13,6 +13,10 @@ const Container = styled.main`
   background-attachment: fixed;
   background-position: center center;
   background-blend-mode: darken;
+
+  @media (max-width: ${SIZES.iphone_proMax_width}) {
+    background: #17101f none;
+  }
 `;
 
 const SectionContainer = styled.section`
@@ -22,6 +26,7 @@ const SectionContainer = styled.section`
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
+  margin-bottom: 5%;
 
   @media (max-width: ${SIZES.iphoneX_width}) {
     width: 95%;

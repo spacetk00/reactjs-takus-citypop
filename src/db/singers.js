@@ -223,8 +223,82 @@ let singers = [
     name: "リックロール",
     image: "rick.webp",
   },
+
+  {
+    name: "Kayo Agatsuma",
+    image: "kayo.webp",
+  },
+
+  {
+    name: "Akemi Ishi",
+    image: "akemi.webp",
+  },
+
+  {
+    name: "Chika Takami",
+    image: "chika.webp",
+  },
+
+  {
+    name: "Etsuko Sai",
+    image: "etsuko_sai.webp",
+  },
+
+  {
+    name: "Junichi Inagaki",
+    image: "junichi_inagaki.webp",
+  },
+
+  {
+    name: "Kenjiro Sakiya",
+    image: "kenjiro_sakyia.webp",
+  },
+
+  {
+    name: "Maiko Okamoto",
+    image: "maiko.webp",
+  },
+
+  {
+    name: "Tomoko Aran",
+    image: "tomoko_aran.webp",
+  },
+
+  {
+    name: "Kaoru Akimoto",
+    image: "kaoru_akimoto.webp",
+  },
+
+  {
+    name: "Kazumi Kawai",
+    image: "kazumi_kawai.webp",
+  },
+
+  {
+    name: "Ken Tamura",
+    image: "ken_tamura.webp",
+  },
+
+  {
+    name: "Minako Yoshida",
+    image: "minako_yoshida.webp",
+  },
+
+  {
+    name: "Takako Ohta",
+    image: "takako_ohta.webp",
+  },
+
+  {
+    name: "Yuko Nito",
+    image: "yuko_nito.webp",
+  },
+
+  {
+    name: "Yuko Tomita",
+    image: "yuko_tomita.webp",
+  },
+
 ];
 
-//singers = singers.sort(() => Math.random() - 0.5);
-//console.log(singers[0].name, singers[0].image);
 export default singers;

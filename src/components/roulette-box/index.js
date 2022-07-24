@@ -37,6 +37,8 @@ export default function RouletteBox() {
 
   if (singersArray[0].name === "リックロール") {
     link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  } else if (singersArray[0].name === "Chika Takami") {
+    link = `https://www.youtube.com/results?search_query=高見 知佳 album`;
   } else {
     link = `https://www.youtube.com/results?search_query=${
       singersArray[0].name + " album"

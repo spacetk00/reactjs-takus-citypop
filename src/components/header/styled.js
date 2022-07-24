@@ -29,6 +29,10 @@ const NavContainer = styled.nav`
     font-weight: bold;
     font-family: ${TYPOS.nav_link_font};
     font-size: ${TYPOS.nav_link_size};
+
+    @media (max-width: ${SIZES.ipad_width}) {
+      font-size: ${TYPOS.nav_link_md_size};
+    }
   }
 
   a:hover {

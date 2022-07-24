@@ -1,5 +1,7 @@
 const COLORS = {
   text_default_color: "white",
+  transparent_background: "#17171766",
+  transparent_background_main: "#17171780",
 
   highlight_color_1: "#592671",
   highlight_color_2: "#002ccda6",
@@ -48,7 +50,7 @@ const COLORS = {
   staff_5_colors: "#FF00E5, #FFD600",
   staff_6_colors: "#2400FF, #00FFFF",
 
-  roulette_box_colors: "#C216A3, #C60000",
+  roulette_box_colors: "#3C60FF, #00EAFF",
 };
 
 

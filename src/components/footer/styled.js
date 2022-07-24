@@ -7,10 +7,6 @@ const FooterContainer = styled.div`
   height: 500px;
   background-color: ${COLORS.footer_background};
 
-  @media (max-width: ${SIZES.generic_laptop_width}) {
-    height: 400px;
-  }
-
   @media (max-width: ${SIZES.ipad_width}) {
     height: 900px;
   }
@@ -35,7 +31,7 @@ const FooterContent = styled.div`
 const FooterInfo = styled.div`
   width: 100%;
   height: 10%;
-  padding: 0.5%;
+  padding: 0.2%;
   background-color: ${COLORS.footer_end};
   display: flex;
   justify-content: center;

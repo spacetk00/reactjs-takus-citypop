@@ -6,6 +6,7 @@ const TYPOS = {
 
   nav_link_font: "Inter",
   nav_link_size: "1.2em",
+  nav_link_md_size: "1em",
 
   button_font: "Moonrising",
   button_text_size: "1.2em",

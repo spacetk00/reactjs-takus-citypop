@@ -91,6 +91,7 @@ const BoxText = styled.p`
   transform: skew(20deg);
   color: ${COLORS.text_default_color};
   text-align: justify;
+  text-justify: distribute;
   margin-top: 2%;
 
   @media (max-width: ${SIZES.generic_laptop_width}) {

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import wall from '../images/body/wall.jpg';
+import wall from '../images/body/wall2.webp';
+import COLORS from "../constants/colors";
 import SIZES from "../constants/sizes";
 
 const Container = styled.main`
@@ -7,10 +8,11 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(${wall});
+  background: ${COLORS.transparent_background_main} url(${wall});
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  background-blend-mode: darken;
 `;
 
 const SectionContainer = styled.section`

@@ -14,7 +14,7 @@ export default function TakuMisc() {
         <T.LogoBox>
           <T.Logo src={takulogo} alt="Takuromi Logo" data-aos="zoom-in" />
         </T.LogoBox>
-        <T.SocialBox>
+        <T.SocialBox data-aos="fade-left">
           <T.SocialLinkContainer
             href="https://www.pinterest.com"
             target="_blank"

@@ -20,9 +20,10 @@ export default function Highlight() {
       <H.TextBox>
         <H.BoxTitle>What the Pop!</H.BoxTitle>
         <H.BoxText>
-          City Pop is an innovative and future-proof living concept where you
-          can create your own pop-up city. An online platform where you can turn
-          your bedroom into an urban paradise. Your very own paradise on earth.
+          Taku's City-Pop is the best place to share and discuss old-school
+          J-pop and City-Pop music with other members in a chill environment and
+          channels for finding new music in the genre or even music similar to
+          City-Pop from other countries.
         </H.BoxText>
       </H.TextBox>
 

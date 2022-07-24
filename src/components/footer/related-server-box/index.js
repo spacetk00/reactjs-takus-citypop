@@ -7,7 +7,7 @@ import COLORS from "../../../constants/colors";
 
 export default function RelatedServerBox() {
   return (
-    <RB.RelatedServerContainer data-aos="" background={vrchat}>
+    <RB.RelatedServerContainer data-aos="flip-left" background={vrchat}>
       <RB.ContainerTitle>
         If you're a gamer who doesn't like games, take a look into this server
       </RB.ContainerTitle>

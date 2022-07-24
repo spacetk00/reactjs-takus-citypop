@@ -14,7 +14,7 @@ export default function Footer() {
 
       <F.FooterInfo>
         <F.InfoText>
-          @2022 - Taku's City Pop, Web site made with heart by Silvaero{" "}
+          @2022 - Taku's City Pop, Web site made with heart by Space{" "}
         </F.InfoText>
       </F.FooterInfo>
     </F.FooterContainer>

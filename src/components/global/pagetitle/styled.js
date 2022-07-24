@@ -65,6 +65,7 @@ const BigTitle = styled.h2`
   @media (max-width: ${SIZES.ipad_width}) {
     background-image: none;
     background-clip: none;
+    -webkit-text-fill-color: unset;
   }
 `;
 

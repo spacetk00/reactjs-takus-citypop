@@ -24,8 +24,7 @@ const COLORS = {
   user_tbox_color_1: "#00000080",
   user_tbox_color_2: "#2b006366",
 
-  page_title_color_1: "#6200DE",
-  page_title_color_2: "#0094FF",
+  page_title_color: "#2e4eef",
 
   sever_box_color_1: '#7f60ffb3',
   sever_box_color_2: '#00ffa3b3',

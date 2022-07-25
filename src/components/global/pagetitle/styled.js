@@ -49,22 +49,10 @@ const BigTitle = styled.h2`
   font-family: ${TYPOS.page_title_font}, Arial, sans-serif;
   font-size: ${TYPOS.page_title_bg_size};
   font-variant: small-caps;
-  background-image: linear-gradient(
-    to right,
-    ${COLORS.page_title_color_1},
-    ${COLORS.page_title_color_2}
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: ${COLORS.page_title_color};
 
   @media (max-width: ${SIZES.generic_laptop_width}) {
     font-size: ${TYPOS.page_title_bg_size_res};
-  }
-
-  @media (max-width: ${SIZES.ipad_width}) {
-    background-image: unset;
-    background-clip: none;
-    -webkit-text-fill-color: #3b29ff;
   }
 `;
 

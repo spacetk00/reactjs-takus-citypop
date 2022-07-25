@@ -19,7 +19,7 @@ const AvatarBox = styled.picture`
 `;
 
 const TitleAvatar = styled.img`
-  width: 30%;
+  width: 50%;
   border-radius: 50%;
 `;
 

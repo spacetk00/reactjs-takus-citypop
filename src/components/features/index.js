@@ -19,7 +19,7 @@ export default function Features() {
           "On some weekends we have music events organized by ",
           <F.StrongWord>Dj Ocy</F.StrongWord>,
           " and ",
-          <F.StrongWord>Dj Dogue</F.StrongWord>,
+          <F.StrongWord>Dj Doge</F.StrongWord>,
           ", where we use the server's own bot to play great citypop music, members can also participate by adding songs.",
         ]}
         box_img={djOcy}

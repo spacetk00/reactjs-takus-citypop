@@ -4,7 +4,7 @@ import SectionTitle from "../global/section-title";
 import UserBox from "./user-box/index";
 
 import emposto from "../../images/users/emposto.webp";
-import kotaro from "../../images/users/kotaro.webp";
+import ocy from "../../images/users/ocy.webp";
 import mark from "../../images/users/mark.webp";
 import gooney from "../../images/users/gooney.webp";
 
@@ -33,9 +33,9 @@ export default function UsersExperience() {
         />
         <UserBox
           animation="fade-left"
-          user_text="“I like the music and i’m just here for the chaos.”"
-          user_name="Kotaro"
-          user_avatar={kotaro}
+          user_text="“I like to do events while playing Mario Kart.”"
+          user_name="OcyrusHightop"
+          user_avatar={ocy}
         />
       </U.UsersContainer>
     </U.ExperiencesContainer>

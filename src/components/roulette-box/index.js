@@ -14,7 +14,6 @@ export default function RouletteBox() {
   const [isRolling, setIsRolling] = useState(false);
   const [hasData, setHasData] = useState(false);
   let singersArray = singers;
-  let prevRollName = "";
   let link = "";
 
   const rollSinger = () => {
@@ -26,22 +25,20 @@ export default function RouletteBox() {
     singersArray = singersArray.sort(() => Math.random() - 0.5);
 
     setTimeout(() => {
-      setName(singersArray[0].name);
       setAvatar(require(`../../images/singers/${singersArray[0].image}`));
-      setIsRolling(false);
-      setHasData(true);
-      prevRollName = singersArray[0].name;
-      console.log(prevRollName);
+      setTimeout(() => {
+        setName(singersArray[0].name);
+        setIsRolling(false);
+        setHasData(true);
+      }, 500);
     }, 3000);
   };
 
   if (singersArray[0].name === "リックロール") {
-    link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-  } else if (singersArray[0].name === "Chika Takami") {
-    link = `https://www.youtube.com/results?search_query=高見 知佳 album`;
+    link = "https://www.youtube.com/watch?v=RzbASAiwACg";
   } else {
     link = `https://www.youtube.com/results?search_query=${
-      singersArray[0].name + " album"
+      singersArray[0].jname + " album"
     }`;
   }
 

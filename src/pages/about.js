@@ -11,7 +11,6 @@ import Break from "../components/break";
 
 import Akina from "../images/titles/akinator.webp";
 import Taku from "../images/staff/taku.webp";
-import Ocyrus from "../images/staff/ocy.webp";
 import SirDoge from "../images/staff/doge.webp";
 import Riri from "../images/staff/riri.webp";
 import Gatito from "../images/staff/gatito.webp";
@@ -44,12 +43,6 @@ export default function About() {
             name="Taku"
             about="Takumori is the owner of this server and takes good care of it. He likes katanas and plays piano sometimes after fixing routers at work. Currently he owns a VR Chat server where he pretends to be a Seiko Matsuda fan."
             color={COLORS.staff_1_colors}
-          />
-          <StaffCard
-            image={Ocyrus}
-            name="OcyrusHightop"
-            about="The swag's sacred guardian, he is a really nice guy but has sleeping problems that cause him to sleep in the middle of music events. He is a professional Mario Kart player and his favorite artists are Cosmos and Yu Hayami."
-            color={COLORS.staff_2_colors}
           />
           <StaffCard
             image={SirDoge}
